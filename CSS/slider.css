@@ -1,0 +1,199 @@
+/* ---------------------------------------------------------------------------- */
+/* IMAGES CERTIFICATES */
+
+.section {
+  position: relative;
+}
+
+.testimonial img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.slider {
+  height: 600px;
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  /* transition: transform 1s; */
+  transition: none; /* Disable transition by default */
+}
+
+.slide-transition {
+  transition: transform 1s; /* Enable transition when this class is added */
+}
+
+.firstSlide {
+  z-index: 5;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  border: none;
+  color: #faf7f7;
+  border-radius: 50%;
+  height: var(--spacing-lg);
+  width: var(--spacing-lg);
+  font-size: var(--font-lg);
+  background-color: rgba(196, 170, 170, 0.7);
+  aspect-ratio: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgb(255, 255, 255);
+}
+
+.slider__btn--left {
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 5%;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: var(--font-sm);
+  width: var(--font-sm);
+  border-radius: 50%;
+  margin-right: var(--spacing-lg);
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  /* background-color: #fff; */
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+.container__slide__types {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.container__slide__types p {
+  border: solid white 1px;
+  padding: 0.5rem;
+}
+
+.buttons .active__certificates__button__one {
+  box-shadow: inset 0 0 0 100vmax var(--_c);
+  color: white;
+}
+
+.buttons .active__certificates__button__two {
+  box-shadow: inset 0 0 0 100vmax var(--_c);
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  width: 500px;
+  gap: 10px;
+  --b: 4px; /* the border thickness */
+  --h: 1.8em; /* the height */
+}
+
+.buttons button {
+  --_c: #d1ceda;
+  flex: calc(1.25 + var(--_s, 0));
+  font-size: 1rem;
+  font-weight: bold;
+  height: var(--h);
+  cursor: pointer;
+  color: var(--_c);
+  border: var(--b) solid var(--_c);
+  background: conic-gradient(
+      at calc(100% - 1.3 * var(--b)) 0,
+      var(--_c) 209deg,
+      #0000 211deg
+    )
+    border-box;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 0.577 * var(--h)) 100%, 0 100%);
+  padding: 0 calc(0.288 * var(--h)) 0 0;
+  margin: 0 calc(-0.288 * var(--h)) 0 0;
+  transition: flex 0.4s;
+  z-index: 10;
+}
+.buttons button + button {
+  --_c: #606194;
+  flex: calc(0.95 + var(--_s, 0));
+  background: conic-gradient(
+      from -90deg at calc(1.3 * var(--b)) 100%,
+      var(--_c) 119deg,
+      #0000 121deg
+    )
+    border-box;
+  clip-path: polygon(calc(0.577 * var(--h)) 0, 100% 0, 100% 100%, 0 100%);
+  margin: 0 0 0 calc(-0.288 * var(--h));
+  padding: 0 0 0 calc(0.288 * var(--h));
+}
+
+.buttons button:focus-visible {
+  outline-offset: calc(-2 * var(--b));
+  outline: calc(var(--b) / 2) solid #000;
+  background: none;
+  clip-path: none;
+  margin: 0;
+  padding: 0;
+}
+.buttons button:focus-visible + button {
+  background: none;
+
+  clip-path: none;
+  margin: 0;
+  padding: 0;
+}
+.buttons button:has(+ button:focus-visible) {
+  background: none;
+  clip-path: none;
+  margin: 0;
+  padding: 0;
+}
+button:hover,
+button:active:not(:focus-visible) {
+  --_s: 0.5;
+}
+button:active {
+  box-shadow: inset 0 0 0 100vmax var(--_c);
+  color: #fff;
+}

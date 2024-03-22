@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/slider.css" />
+    <link rel="stylesheet" href="./CSS/navbar.css" />
+    <title>Safkiar</title>
+    <script defer src="JS/gradient.js"></script>
+    <script defer src="JS/view.js"></script>
+    <script defer src="JS/slider.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar__container">
+      <canvas id="gradient-canvas"></canvas>
+      <ul class="navbar">
+        <li class="btn" id="Home">Home</li>
+        <li class="navbar__element" id="Projects">Projects</li>
+        <li class="navbar__element active__navbar" id="Certificates">
+          Certificates
+        </li>
+        <li class="navbar__element" id="Experience">Experience</li>
+        <li class="navbar__element" id="Aboutme">About me</li>
+      </ul>
+    </nav>
+    <div id="loadingOverlay">
+      <div class="spinner"></div>
+      <!-- Optionally, insert an animated GIF or any loading indicator inside this div -->
+    </div>
+    <div class="container">
+      <div class="container__slide__types">
+        <div class="buttons">
+          <button
+            class="certificates__button__one active__certificates__button__one"
+          >
+            Web Development
+          </button>
+          <button class="certificates__button__two">Other diplomas</button>
+        </div>
+      </div>
+      <section class="section WebDevelopment">
+        <div class="slider">
+          <div class="slide firstSlide webslide">
+            <div class="testimonial">
+              <div><img src="Images/Certificates/CSS.jpg" alt="" /></div>
+            </div>
+          </div>
+          <div class="slide webslide">
+            <div class="testimonial">
+              <div><img src="Images/Certificates/Python.jpg" alt="" /></div>
+            </div>
+          </div>
+          <div class="slide webslide">
+            <div class="testimonial">
+              <div><img src="Images/Certificates/Github.jpg" alt="" /></div>
+            </div>
+          </div>
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
