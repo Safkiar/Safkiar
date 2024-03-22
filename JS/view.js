@@ -16,7 +16,7 @@ document.querySelector("#Aboutme").addEventListener("click", function () {
   window.location.href = "Aboutme.html";
 });
 document.querySelector("#Home").addEventListener("click", function () {
-  window.location.href = "Index.html";
+  window.location.href = "index.html";
 });
 
 //  THIS is LOADING SPINNER
