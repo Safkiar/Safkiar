@@ -179,3 +179,7 @@ class CertificateButtons {
 document.addEventListener("DOMContentLoaded", () => {
   new CertificateButtons();
 });
+
+window.onload = function () {
+  document.getElementById("loadingOverlay").style.display = "none";
+};

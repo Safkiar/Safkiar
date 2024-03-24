@@ -157,6 +157,10 @@ table {
   border-spacing: 0;
 }
 
+button:focus {
+  outline: none;
+}
+
 /* ------------------------------------------------------------------------------- */
 /* NAVBAR  SECTION */
 
@@ -180,6 +184,26 @@ table {
 .first__container__content {
   border: 1px solid yellow;
   width: 80%;
+  padding: 2% 5%;
+}
+
+.container__h1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first__container__content h1 {
+  font-size: 2rem;
+  margin-bottom: 3%;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+}
+.first__container__content h2 {
+  font-size: 1.4rem;
+  margin: 2% 0;
+  letter-spacing: 0.1px;
+  line-height: 120%;
 }
 
 .first__container__contact {
@@ -235,27 +259,45 @@ table {
   font-size: 1.2rem;
   display: block;
   text-align: left;
-  padding-top: 10%;
-  padding-left: 10%;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 3%;
+  border: 1px yellow solid;
+}
+
+.mail__link:hover {
+  box-shadow: 0 0 5px white;
+  background-color: rgba(250, 247, 247, 0.199);
+}
+
+.codewars__paragraph:hover {
+  box-shadow: 0 0 5px white;
+  background-color: rgba(250, 247, 247, 0.199);
 }
 
 .fa-sharp {
   padding-right: 3%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .codewars__paragraph {
+  border: 1px yellow solid;
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
   display: block;
   text-align: left;
-  padding-top: 10%;
-  padding-left: 10%;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 3%;
   cursor: pointer;
 }
 
 .codewars__icon {
   width: 1.2rem;
   margin-right: 1rem;
-  color: red;
+  background-color: red;
 }

@@ -20,7 +20,3 @@ document.querySelector("#Home").addEventListener("click", function () {
 });
 
 //  THIS is LOADING SPINNER
-
-window.onload = function () {
-  document.getElementById("loadingOverlay").style.display = "none";
-};

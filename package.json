@@ -2,7 +2,6 @@
   "name": "safkiar",
   "version": "1.0.0",
   "description": "CV of Michał Kikowski",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
