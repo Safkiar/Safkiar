@@ -60,6 +60,7 @@
   padding-right: 10%;
   font-size: 1.1rem;
   letter-spacing: 0.5px;
+  line-height: 120%;
 }
 
 .projects__second__photo {
@@ -102,6 +103,7 @@
   padding-right: 10%;
   font-size: 1.1rem;
   letter-spacing: 0.5px;
+  line-height: 120%;
 }
 
 .projects__first__technology {
