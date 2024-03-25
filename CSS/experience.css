@@ -1,0 +1,100 @@
+.expContainer {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid burlywood;
+  display: flex;
+  height: 80%;
+  padding-top: 2%;
+}
+
+.expContainer--intro {
+  width: 80%;
+  border: red solid 2px;
+}
+
+.expContainer--technology {
+  width: 20%;
+  border: rgb(136, 131, 141) 2px solid;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.expContainer--intro--work {
+  border: 1px green solid;
+  min-height: 40%;
+  padding: 5%;
+  padding-top: 2%;
+}
+.expContainer--intro--stats {
+  border: 1px pink solid;
+  padding: 5%;
+  padding-top: 2%;
+  font-size: 1.1rem;
+}
+
+.expContainer--intro--stats h2 {
+  padding-bottom: 1%;
+  font-size: 1.6rem;
+}
+
+.expContainer--intro--stats p {
+  padding-bottom: 1%;
+}
+.expContainer--intro--work h1 {
+  padding-bottom: 1%;
+  font-size: 1.8rem;
+}
+
+.statsDescription {
+  display: flex;
+  padding-left: 2%;
+}
+.statsDescription > p:first-of-type {
+  width: 25%;
+}
+
+.statsDescription > p:nth-of-type(2) {
+  width: 4%;
+  text-align: end;
+}
+
+.placeAndTime {
+  display: flex;
+  border: 1px solid wheat;
+  margin-bottom: 1%;
+  font-size: 1.2rem;
+}
+.placeAndTime > p:first-of-type {
+  border: solid 1px green;
+  width: 25%;
+  padding-left: 1%;
+}
+
+.technology--heading {
+  border: solid white 1px;
+  font-size: 1.5rem;
+}
+
+.technology--content {
+  border: green 1px solid;
+  display: flex;
+}
+
+.variables {
+  width: 50%;
+}
+
+.variables p {
+  padding-top: 20%;
+  text-align: start;
+  padding-left: 20%;
+}
+
+.stars {
+  width: 50%;
+}
+
+.stars p {
+  padding-top: 20%;
+  text-align: start;
+}
