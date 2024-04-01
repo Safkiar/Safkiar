@@ -23,54 +23,89 @@
   </head>
   <body>
     <nav class="navbar__container">
-      <canvas id="gradient-canvas"></canvas>
       <ul class="navbar">
-        <a href="index.html"
-          ><li class="btn " id="Home">Home</li></a
+        <a class="link--home" href="index.html"
+          ><li class="btn" id="Home">Home</li></a
         >
-        <a href="Projects.html"
-          ><li class="navbar__element " id="Projects">Projects</li></a
-        >
-        <a href="Certificates.html"
-          ><li class="navbar__element  id="Certificates">Certificates</li></a
-        >
-        <a href="Experience.html"
-          ><li class="navbar__element" id="Experience">Experience</li></a
-        >
-        <a href="Aboutme.html"
-          ><li class="navbar__element active__navbar"" id="Aboutme">About me</li></a
-        >
+        <div class="navbar__elements">
+          <a class="link--nav" href="Projects.html"
+            ><li class="navbar__element" id="Projects">Projects</li>
+          </a>
+          <a class="link--nav" href="Certificates.html"
+            ><li class="navbar__element" id="Certificates">Certificates</li>
+          </a>
+          <a class="link--nav" href="Experience.html"
+            ><li class="navbar__element" id="Experience">Experience</li></a
+          >
+          <a class="link--nav" href="Aboutme.html"
+            ><li class="navbar__element" id="Aboutme">About me</li>
+            <div class="blackLine"></div
+          ></a>
+        </div>
       </ul>
     </nav>
     <div class="container">
       <div class="everything">
-        <div class="passion">      <i class="fa-duotone fa-chess-pawn-piece"></i></div>
-          <div class="cats"> 
-            <div class="cats--container">
-              <div class="kiara--div">
-                <img class="kiara" src="./Images/Kiara.png" alt="">
-                <p class="overlay">Kiara</p>
-              </div>
-           <div class="safir--div"> <img class="safir" src="./Images/Safir.png" alt="">
-            <p class="overlay">Safir</p>
-          </div>
-             
+        <div class="passion">
+          <div class="technology-site">
+            <div class="scrolling-text-container">
+              <p class="scrolling-text">I'm into technology and sci-fi</p>
             </div>
-            <div class="cats--text">I have two cats which I love with all my heart ❤</div>
-         
           </div>
-          <div class="chess"><div class="chessPicture">
-            <div class="chess-link"><i class="fa-solid fa-chess-pawn"></i><p>chess.com</p></div>
-            <div class="chess-description">Sometimes I play chess</div>
-            <div class="chess--rapid--info"><p>Chess Rapid</p><p class="elo--r">?</p></div>
-            <div class="chess--rapid"><p class="win--r">?</p><p class="lose--r">?</p><p class="draw--r">?</p></div>
-            <div class="chess--blitz--info"><p>Chess Blitz</p><p class="elo--b">?</p></div>
-            <div class="chess-blitz"><p class="win--b">?</p><p class="lose--b">?</p><p class="draw--b">?</p></div>
-            </div></div>
-      
- 
-    
-          <div class="instagram"></i></div>
+        </div>
+        <div class="cats">
+          <div class="cats--container">
+            <div class="kiara--div">
+              <img class="kiara" src="./Images/Kiara.png" alt="" />
+              <p class="overlay">Kiara</p>
+            </div>
+            <div class="safir--div">
+              <img class="safir" src="./Images/Safir.png" alt="" />
+              <p class="overlay">Safir</p>
+            </div>
+          </div>
+          <div class="cats--text">
+            I have two cats which I love with all my heart ❤
+          </div>
+        </div>
+        <div class="chess">
+          <div class="chessPicture">
+            <div class="chess-link">
+              <i class="fa-solid fa-chess-pawn"></i>
+              <p>chess.com</p>
+            </div>
+            <div class="chess-description">I play chess</div>
+            <div class="chess--rapid--info">
+              <p>Chess Rapid</p>
+              <p class="elo--r">?</p>
+            </div>
+            <div class="chess--rapid">
+              <p class="win--r">?</p>
+              <p class="lose--r">?</p>
+              <p class="draw--r">?</p>
+            </div>
+            <div class="chess--blitz--info">
+              <p>Chess Blitz</p>
+              <p class="elo--b">?</p>
+            </div>
+            <div class="chess-blitz">
+              <p class="win--b">?</p>
+              <p class="lose--b">?</p>
+              <p class="draw--b">?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="instagram">
+          <div class="photo-container">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram instagram"></i></a>
+              </li>
+            </ul>
+            <p class="train">I train calisthenics every day 💪</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>

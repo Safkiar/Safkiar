@@ -19,23 +19,25 @@
   </head>
   <body>
     <nav class="navbar__container">
-      <canvas id="gradient-canvas"></canvas>
       <ul class="navbar">
-        <a href="index.html"><li class="btn" id="Home">Home</li></a>
-        <a href="Projects.html"
-          ><li class="navbar__element" id="Projects">Projects</li></a
+        <a class="link--home" href="index.html"
+          ><li class="btn" id="Home">Home</li></a
         >
-        <a href="Certificates.html"
-          ><li class="navbar__element active__navbar" id="Certificates">
-            Certificates
-          </li></a
-        >
-        <a href="Experience.html"
-          ><li class="navbar__element" id="Experience">Experience</li></a
-        >
-        <a href="Aboutme.html"
-          ><li class="navbar__element" id="Aboutme">About me</li></a
-        >
+        <div class="navbar__elements">
+          <a class="link--nav" href="Projects.html"
+            ><li class="navbar__element" id="Projects">Projects</li>
+          </a>
+          <a class="link--nav" href="Certificates.html"
+            ><li class="navbar__element" id="Certificates">Certificates</li>
+            <div class="blackLine"></div>
+          </a>
+          <a class="link--nav" href="Experience.html"
+            ><li class="navbar__element" id="Experience">Experience</li></a
+          >
+          <a class="link--nav" href="Aboutme.html"
+            ><li class="navbar__element" id="Aboutme">About me</li></a
+          >
+        </div>
       </ul>
     </nav>
     <div id="loadingOverlay">

@@ -4,7 +4,6 @@
 }
 
 .everything {
-  border: 1px solid white;
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -13,45 +12,42 @@
   gap: 20px;
 }
 
-.fourPassion {
-  border: 1px solid yellow;
-}
-
-.instagram {
-  border: 1px solid yellow;
-}
-
 .cats {
-  border: 1px solid yellow;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .passion {
-  border: 1px solid yellow;
 }
 
 .cats--container {
-  border: 1px solid yellow;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .kiara {
-  height: 250px;
+  height: 350px;
   object-fit: contain;
 }
 
 .safir {
-  height: 250px;
+  height: 350px;
   object-fit: contain;
 }
 
 .cats--text {
-  font-size: 1.6rem;
+  position: absolute;
+  display: flex;
+  bottom: -5%;
+  left: 0;
+  width: 100%;
+  height: 20%;
   display: flex;
   justify-content: center;
+  font-size: 1.6rem;
   align-items: center;
-  flex-grow: 1;
+  font-weight: bold;
 }
 
 .kiara--div {
@@ -86,8 +82,8 @@
 }
 
 .chess {
-  border: 1px solid yellow;
   display: flex;
+  color: white;
 }
 
 .chessPicture {
@@ -106,7 +102,6 @@
 }
 
 .chess-link {
-  border: 1px solid yellow;
   color: #769656;
   display: flex;
   margin-bottom: 2%;
@@ -115,20 +110,17 @@
 }
 
 .chess-description {
-  border: 1px solid yellow;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 .chess--rapid {
-  border: 1px solid yellow;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   display: flex;
   width: 270px;
   justify-content: space-between;
 }
 
 .chess-blitz {
-  border: 1px solid yellow;
   margin-bottom: 2%;
   display: flex;
   width: 270px;
@@ -136,7 +128,6 @@
 }
 
 .chess--rapid--info {
-  border: 1px solid yellow;
   display: flex;
   margin-bottom: 2%;
   justify-content: space-between;
@@ -144,9 +135,114 @@
 }
 
 .chess--blitz--info {
-  border: 1px solid yellow;
   display: flex;
   margin-bottom: 2%;
   justify-content: space-between;
   width: 200px;
+}
+
+.photo-container {
+  background-image: url("../Images/workout.png");
+  height: 100%;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  font-size: 1.4rem;
+  color: white;
+  padding-bottom: 2%;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  padding-left: 10%;
+}
+ul li {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+ul li a {
+  text-decoration: none;
+}
+ul li a .fa-brands {
+  font-size: 4rem;
+  color: #f8f2f2;
+}
+ul li a::before {
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 4rem;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+ul li:nth-child(1) a::before {
+  content: "\f16d";
+  background-image: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* border-bottom: 4px solid #dc2743; */
+}
+
+ul li:hover a::before {
+  height: 100%;
+}
+
+.train {
+  padding-bottom: 1.5rem;
+  padding-right: 10%;
+}
+
+.technology-site {
+  background-image: url("../Images/webdev.png");
+  height: 100%;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  font-size: 1.4rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-top: 40%;
+}
+
+.scrolling-text-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%; /* Adjust to the width of the area you want the text to scroll across */
+  height: 50px; Adjust to the height needed
+
+}
+
+.scrolling-text {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  animation: scroll-text 5s linear infinite;
+  color: rgb(125, 191, 253);
+}
+
+@keyframes scroll-text {
+  0%,
+  100% {
+    transform: translateX(-100%); Start off-screen on the left
+  }
+  100% {
+    transform: translateX(250%); /* Fully visible as it moves right */
+  }
 }

@@ -6,17 +6,16 @@
 
 .portfolio {
   width: 60%;
-  border: 1px solid black;
-  height: 80%;
+  height: 90%;
 }
 
 .portfolio-container {
-  border: 1px solid white;
   height: 250px;
   width: 100%;
   display: flex;
   align-items: center;
   margin-bottom: 2%;
+  position: relative;
 }
 
 .portfolio__photo {
@@ -25,6 +24,7 @@
   min-width: 200px;
   height: 200px;
   position: relative;
+  /*  */
 }
 
 .portfolio__photo img {
@@ -34,15 +34,31 @@
   height: 200px;
 }
 
-.portfolio__photo img:hover {
-  opacity: 0.8;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.overlay:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.171);
+  color: white;
   cursor: pointer;
 }
 
 .portfolio__text {
   width: 100%;
   height: 90%;
-  border: purple 1px solid;
   display: flex;
   flex-direction: column;
 }
@@ -50,11 +66,11 @@
 .portfolio__technology {
   width: 10%;
   height: 80%;
-  border: pink 1px solid;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .portfolio__technology p {
@@ -64,18 +80,17 @@
 .text--heading {
   min-height: 20%;
   text-align: center;
-  padding-top: 3%;
-  font-size: 1.4rem;
-  border: 1px black solid;
-  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
   letter-spacing: 0.5px;
   font-weight: bold;
 }
 
 .text--paragraph {
   flex-grow: 1;
-  font-size: 1.1rem;
-  border: 1px brown solid;
+  font-size: 1.15rem;
   padding: 2%;
   padding-left: 3%;
   letter-spacing: 0.5px;

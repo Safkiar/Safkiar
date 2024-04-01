@@ -1,101 +1,118 @@
 .navbar__container {
-  width: 100vw;
+  width: 80vw;
+  margin: 0 auto;
   height: 12vh;
   display: flex;
-  justify-content: center;
-}
-
-#gradient-canvas {
-  width: 100vw;
-  height: 20vh;
-  position: absolute;
-  z-index: -10;
-  --gradient-color-1: #9c6285;
-  --gradient-color-2: #0103a5;
-  --gradient-color-3: #1e0a4e;
-  --gradient-color-4: #07447c;
 }
 
 .navbar {
   display: flex;
   width: 100%;
-  list-style: none;
-  justify-content: space-evenly;
   align-items: center;
-  padding: 0 20px;
+  justify-content: space-around;
+}
+
+.navbar__elements {
+  display: flex;
+  width: 1000px;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+.link--nav {
+  color: black;
+  position: relative;
+}
+
+.link--home {
+  position: relative;
 }
 
 .btn {
-  background-color: rgba(0, 0, 0, 0.25);
   padding: 0.8rem 2rem;
-  color: white;
-  border-radius: 25px;
+  color: rgb(0, 0, 0);
   font-size: 1.4rem;
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  z-index: 5;
+}
+
+.btn::before,
+.btn::after {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  transition: transform 0.5s ease;
 }
 
 .btn::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #00ebdf;
-  position: absolute;
   top: 0;
-  right: 0;
   transform: translateX(-100%);
-  transition: transform 0.5s ease;
-  z-index: -1;
 }
 
-.btn:hover {
-  color: rgb(9, 22, 206);
-  transition: transform 0.5s ease;
+.btn::after {
+  bottom: 0;
+  transform: translateX(-100%);
 }
 
-.btn:hover::before {
+.btn:hover::before,
+.btn:hover::after {
   transform: translateX(0);
 }
 
 .navbar__element {
-  padding: 0.5rem 5rem;
+  padding: 0.5rem 4rem;
   font-size: 1.2rem;
-  background-color: rgba(0, 0, 0, 0.25);
   border-radius: 3%;
   cursor: pointer;
-  color: white;
+  color: black;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.navbar__element::before {
+  content: "";
+  background-color: rgb(10, 10, 10);
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  z-index: -5;
+  bottom: 0;
+  right: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
 }
 
 .navbar__element:hover {
-  color: rgb(9, 22, 206);
   transition: transform 0.5s ease;
-  background-color: #00ebdfd5;
 }
 
-.active__navbar {
-  box-shadow: 0px 0px 12px 5px rgba(255, 255, 255, 0.7);
-  background-color: rgba(0, 0, 0, 0.45);
-  color: rgb(9, 22, 206);
-  animation: pulse 3s infinite ease-in-out;
-  background-color: #00ebdfd5;
+.navbar__element:hover::before {
+  transform: translateX(0);
 }
 
-@keyframes pulse {
-  0%,
-  100% {
-    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.7);
-  }
-  20% {
-    box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.7);
-  }
-  40% {
-    box-shadow: 0px 0px 24px 7px rgba(255, 255, 255, 0.7);
-  }
-  60% {
-    box-shadow: 0px 0px 16px 5px rgba(255, 255, 255, 0.7);
-  }
-  80% {
-    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.7);
-  }
+.blackLine,
+.blackLine2 {
+  position: absolute;
+  width: 100%;
+  height: 3%;
+  background-color: black;
+  bottom: 1.5%;
+}
+
+.blackLine2 {
+  top: 1.5%;
+}
+
+.navbar__element:hover {
+  color: black;
+  transition: transform 0.5s ease;
 }
