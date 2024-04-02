@@ -1,4 +1,7 @@
 :root {
+  /* show border */
+  --border: black 2px solid;
+  --border: none;
   /* spacing  */
   --spacing-sm: 8px;
   --spacing-md: 16px;
@@ -180,15 +183,18 @@ button:focus {
   height: 100%;
   width: 80%;
   padding-top: 1%;
+  border: var(--border);
 }
 .first__container__content {
   width: 80%;
   padding: 2% 5%;
+  border: var(--border);
 }
 
 .container__h1 {
   display: flex;
   justify-content: space-between;
+  border: var(--border);
 }
 
 .first__container__content h1 {
@@ -197,27 +203,32 @@ button:focus {
   text-align: center;
   font-weight: bold;
   letter-spacing: 0.2px;
+  border: var(--border);
 }
 .first__container__content h2 {
   font-size: 1.4rem;
   margin: 2% 0;
   letter-spacing: 0.1px;
   line-height: 120%;
+  border: var(--border);
 }
 
 .first__container__contact {
   width: 20%;
+  border: var(--border);
 }
 .curtain {
   position: relative;
   display: flex;
   justify-content: center;
+  border: var(--border);
 }
 .curtain li {
   position: relative;
   list-style: none;
   cursor: pointer;
   margin: 2% 5%;
+  border: var(--border);
 }
 .curtain li a {
   text-decoration: none;
@@ -225,6 +236,7 @@ button:focus {
 .curtain li a .fa-brands {
   font-size: 5em;
   color: #000000;
+  border: var(--border);
 }
 .curtain li a::before {
   font-family: "FontAwesome";
@@ -235,6 +247,7 @@ button:focus {
   height: 0;
   overflow: hidden;
   transition: 0.5s ease-in-out;
+  border: var(--border);
 }
 
 .curtain li:nth-child(1) a::before {
@@ -260,6 +273,7 @@ button:focus {
   margin-top: 10%;
   margin-left: 10%;
   margin-right: 3%;
+  border: var(--border);
 }
 
 .mail__link:hover {
@@ -271,7 +285,9 @@ button:focus {
 }
 
 .fa-sharp {
-  padding-right: 3%;
+  /* padding-right: 3%; */
+  border: var(--border);
+  margin-right: 2px;
 }
 
 a {
@@ -282,15 +298,143 @@ a {
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
-  display: block;
+  display: flex;
   text-align: left;
   margin-top: 10%;
   margin-left: 10%;
   margin-right: 3%;
   cursor: pointer;
+  border: var(--border);
 }
 
 .codewars__icon {
-  width: 1.2rem;
-  margin-right: 1rem;
+  width: 1.4rem;
+  border: var(--border);
+  margin-right: 5px;
 }
+
+@media (max-width: 1760px) {
+  .mail__link {
+    font-size: 1rem;
+  }
+  .codewars__paragraph {
+    font-size: 1rem;
+  }
+
+  .curtain li a .fa-brands {
+    font-size: 4em;
+  }
+
+  .codewars__icon {
+    width: 1.2rem;
+  }
+
+  .curtain li a::before {
+    font-size: 4em;
+  }
+
+  .first__container__content h1 {
+    font-size: 1.5rem;
+  }
+
+  .first__container__content h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1470px) {
+  .mail__link {
+    font-size: 0.8rem;
+  }
+  .codewars__paragraph {
+    font-size: 0.8rem;
+  }
+
+  .codewars__icon {
+    width: 1rem;
+  }
+
+  .curtain li a .fa-brands {
+    font-size: 3em;
+  }
+
+  .curtain li a::before {
+    font-size: 3em;
+  }
+
+  .first__container__content h1 {
+    font-size: 1.3rem;
+  }
+
+  .first__container__content h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container__home {
+    flex-direction: column;
+    align-items: center;
+  }
+  .first__container__contact {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mail__link {
+    width: auto;
+    margin: 10px auto;
+  }
+  .curtain {
+    margin: 20px 0px;
+  }
+
+  .curtain li a .fa-brands {
+    font-size: 5em;
+  }
+
+  .curtain li a::before {
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 900px) {
+  .first__container__content h1 {
+    font-size: 1rem;
+  }
+
+  .first__container__content h2 {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .container__h1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .container__home {
+    width: 95%;
+  }
+
+  .first__container__content {
+    width: 100%;
+  }
+} /* .container__home
+
+.container__h1
+.first__container__content
+h1;
+.first__container__content h2;
+.first__container__contact;
+.curtain;
+.curtain li;
+.curtain li a .fa-brands;
+.curtain li a::before;
+
+.codewars__paragraph */
