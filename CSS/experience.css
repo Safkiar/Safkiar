@@ -1,27 +1,36 @@
+:root {
+  /* --bar: 1px solid black; */
+}
+
 .expContainer {
   width: 80%;
   margin: 0 auto;
   display: flex;
   height: 80%;
   padding-top: 2%;
+  border: var(--bar);
 }
 
 .expContainer--intro {
   width: 80%;
+  border: var(--bar);
 }
 
 .expContainer--technology {
   width: 20%;
   text-align: center;
   letter-spacing: 0.5px;
+  border: var(--bar);
 }
 
 .expContainer--intro--work {
   min-height: 40%;
   padding: 5%;
   padding-top: 2%;
+  border: var(--bar);
 }
 .expContainer--intro--stats {
+  border: var(--bar);
   padding: 5%;
   padding-top: 2%;
   font-size: 1.4rem;
@@ -31,67 +40,244 @@
   padding-bottom: 2%;
   font-size: 1.8rem;
   font-weight: bold;
+  border: var(--bar);
+  transition: all 0.2s ease;
 }
 
 .expContainer--intro--stats p {
   padding-bottom: 1%;
+  border: var(--bar);
+  transition: all 0.2s ease;
 }
 .expContainer--intro--work h1 {
-  padding-bottom: 3%;
+  padding-bottom: 20px;
   font-size: 2rem;
   font-weight: bold;
+  border: var(--bar);
+  transition: all 0.2s ease;
 }
 
 .statsDescription {
   display: flex;
   padding-left: 2%;
+  border: var(--bar);
 }
 .statsDescription > p:first-of-type {
   width: 25%;
+  border: var(--bar);
+  transition: all 0.2s ease;
 }
 
 .statsDescription > p:nth-of-type(2) {
   width: 7%;
   text-align: end;
+  border: var(--bar);
+  transition: all 0.2s ease;
 }
 
 .placeAndTime {
   display: flex;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   font-size: 1.5rem;
+  border: var(--bar);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
 }
 .placeAndTime > p:first-of-type {
-  width: 25%;
+  width: 50%;
   padding-left: 2%;
+  margin-bottom: 10px;
   font-style: italic;
+  border: var(--bar);
+  transition: all 0.2s ease;
 }
 
 .technology--heading {
   font-size: 1.7rem;
   font-weight: bold;
+  border: var(--bar);
+  transition: all 0.2s ease;
 }
 
 .technology--content {
   display: flex;
+  border: var(--bar);
+  transition: all 0.2s ease;
 }
 
 .variables {
   width: 50%;
+  border: var(--bar);
+  font-size: 20px;
 }
 
 .variables p {
-  padding-top: 20%;
   text-align: start;
-  font-size: 1.2rem;
-  padding-left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--bar);
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
 }
 
 .stars {
   width: 50%;
-  font-size: 1.2rem;
+  font-size: 18px;
+  border: var(--bar);
 }
 
 .stars p {
-  padding-top: 20%;
   text-align: start;
+  border: var(--bar);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 1600px) {
+  .stars {
+    font-size: 15px;
+  }
+
+  .variables {
+    font-size: 16px;
+  }
+
+  .technology--heading {
+    font-size: 1.5rem;
+  }
+
+  .expContainer--intro--stats h2 {
+    padding-bottom: 1%;
+    font-size: 1.5rem;
+  }
+  .expContainer--intro--stats p {
+    padding-bottom: 1%;
+  }
+  .expContainer--intro--work h1 {
+    padding-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  .expContainer--intro--stats {
+    padding: 4%;
+    padding-top: 1%;
+    font-size: 1.2rem;
+  }
+
+  .placeAndTime {
+    margin-bottom: 3%;
+    font-size: 1.2rem;
+    border: var(--bar);
+    display: flex;
+    flex-direction: column;
+  }
+  .statsDescription > p:first-of-type {
+    width: 35%;
+  }
+  .statsDescription > p:nth-of-type(2) {
+    width: 10%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .expContainer {
+    flex-direction: column;
+  }
+  .expContainer--intro {
+    width: 100%;
+  }
+  .expContainer--technology {
+    width: 100%;
+  }
+  .statsDescription {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .expContainer--intro--stats h2 {
+    text-align: center;
+  }
+
+  .statsDescription > p:first-of-type {
+    width: 60%;
+  }
+
+  .statsDescription > p:nth-of-type(2) {
+    width: 30%;
+  }
+  .placeAndTime {
+    text-align: center;
+  }
+  .placeAndTime > p:first-of-type {
+    width: 100%;
+  }
+  .expContainer--intro--work h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .stars {
+    font-size: 13px;
+  }
+
+  .variables {
+    font-size: 14px;
+  }
+
+  .technology--heading {
+    font-size: 1.3rem;
+  }
+
+  .expContainer--intro--stats h2 {
+    font-size: 1.2rem;
+  }
+  .expContainer--intro--stats p {
+    padding-bottom: 1%;
+  }
+  .expContainer--intro--work h1 {
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+  }
+  .expContainer--intro--stats {
+    padding: 4%;
+    padding-top: 1%;
+    font-size: 1rem;
+  }
+
+  .placeAndTime {
+    font-size: 1rem;
+    margin-bottom: 2%;
+  }
+  .placeAndTime > p:first-of-type {
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 750px) {
+  .technology--heading {
+    font-size: 1.1rem;
+  }
+
+  .expContainer--intro--work h1 {
+    padding-bottom: 5px;
+    font-size: 1rem;
+  }
+
+  .placeAndTime {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  .placeAndTime > p:first-of-type {
+    margin-bottom: 5px;
+  }
 }

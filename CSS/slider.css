@@ -1,32 +1,43 @@
 /* ---------------------------------------------------------------------------- */
 /* IMAGES CERTIFICATES */
 
+:root {
+  /* --bor: 1px solid black; */
+}
+
 .section {
   position: relative;
+  border: var(--bor);
 }
 
 .testimonial img {
-  width: 70%;
+  width: 60%;
   height: auto;
   display: block;
   margin: 0 auto;
+  border: var(--bor);
+  transition: all 0.5s;
 }
 
 .slider {
-  height: 800px;
+  /* min-height: 400px; */
+  height: 700px;
   margin: 0 auto;
-  width: 55%;
+  width: 70%;
   position: relative;
   overflow: hidden;
+  border: var(--bor);
 }
 
 .slide {
   position: absolute;
-  top: 40px;
+  top: 60px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: var(--bor);
+  z-index: 100;
 
   /* THIS creates the animation! */
   /* transition: transform 1s; */
@@ -35,6 +46,7 @@
 
 .slide-transition {
   transition: transform 1s; /* Enable transition when this class is added */
+  /* border: var(--bor); */
 }
 
 .firstSlide {
@@ -43,32 +55,34 @@
 
 .slider__btn {
   position: absolute;
-  top: 40%;
+  top: 4%;
   z-index: 10;
   border: none;
   color: #faf7f7;
   border-radius: 50%;
-  height: var(--spacing-lg);
-  width: var(--spacing-lg);
-  font-size: var(--font-lg);
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
   background-color: rgba(196, 170, 170, 0.575);
   aspect-ratio: 1;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .slider__btn--left {
-  left: 5%;
+  left: 10%;
   transform: translate(-50%, -50%);
 }
 
 .slider__btn--right {
-  right: 5%;
+  right: 10%;
   transform: translate(50%, -50%);
 }
 
 .dots {
   position: absolute;
   left: 50%;
+  top: 3%;
   transform: translateX(-50%);
   display: flex;
   z-index: 10;
@@ -78,8 +92,8 @@
   border: none;
   background-color: #b9b9b9;
   opacity: 0.7;
-  height: var(--font-sm);
-  width: var(--font-sm);
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
   margin-right: var(--spacing-lg);
   cursor: pointer;
@@ -130,6 +144,7 @@
   gap: 10px;
   --b: 4px;
   --h: 1.8em;
+  transition: all 0.4s;
 }
 
 .buttons button {
@@ -212,5 +227,49 @@ button:active {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .slider__btn {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+  .dots__dot {
+    width: 13px;
+    height: 13px;
+    margin-right: 20px;
+  }
+  .slider {
+    width: 90%;
+  }
+  .testimonial img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .buttons {
+    width: 300px;
+  }
+  .buttons button {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .buttons {
+    width: 280px;
+  }
+  .slider__btn {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .dots__dot {
+    width: 10px;
+    height: 10px;
+    margin-right: 16px;
   }
 }

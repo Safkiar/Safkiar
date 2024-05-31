@@ -211,6 +211,7 @@ button:focus {
   letter-spacing: 0.1px;
   line-height: 120%;
   border: var(--border);
+  transition: all 0.4s;
 }
 
 .first__container__contact {
@@ -222,6 +223,7 @@ button:focus {
   display: flex;
   justify-content: center;
   border: var(--border);
+  transition: all 0.5s;
 }
 .curtain li {
   position: relative;
@@ -253,12 +255,12 @@ button:focus {
 .curtain li:nth-child(1) a::before {
   content: "\f09b";
   color: #ffffff;
-  border-bottom: 4px solid #ffffff;
+  /* border-bottom: 4px solid #ffffff; */
 }
 .curtain li:nth-child(2) a::before {
   content: "\f08c";
   color: #1da1f2;
-  border-bottom: 4px solid #0077b5;
+  /* border-bottom: 4px solid #0077b5; */
 }
 .curtain li:hover a::before {
   height: 100%;
@@ -285,7 +287,6 @@ button:focus {
 }
 
 .fa-sharp {
-  /* padding-right: 3%; */
   border: var(--border);
   margin-right: 2px;
 }
