@@ -156,6 +156,7 @@
 
 .portfolio__technology .re {
   background-color: rgba(100, 19, 19, 0.178);
+}
 
 @media (max-width: 1450px) {
   .portfolio__photo {
