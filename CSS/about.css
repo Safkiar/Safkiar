@@ -4,60 +4,85 @@
 }
 
 .everything {
-  width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin: 2% 0;
-  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+}
+
+.first-row {
+  width: 100%;
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3%;
+  gap: 50px;
 }
 
 .cats {
+  width: 45%;
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.100);
-}
-
-.passion {
+  /* background-color: rgba(0, 0, 0, 0.100); */
 }
 
 .cats--container {
   display: flex;
   justify-content: center;
   position: relative;
-}
-.kiara {
   height: 350px;
-  object-fit: contain;
-}
-
-.safir {
-  height: 350px;
-  object-fit: contain;
 }
 
 .cats--text {
   position: absolute;
+  color: white;
+  z-index: 10;
   display: flex;
-  bottom: -5%;
-  left: 0;
   width: 100%;
-  height: 20%;
   display: flex;
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   align-items: center;
   font-weight: bold;
+  margin-bottom: 1%;
+  padding: 1%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  padding: 2%;
+
+  border-radius: 2%;
+  box-shadow: 2px 2px 20px #fffdfd;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .kiara--div {
+  width: 50%;
   position: relative;
+  background-image: url("../Images/Kiara.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
 .safir--div {
+  width: 50%;
   position: relative;
-  padding-left: 1%;
+  background-image: url("../Images/safir.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.kiara {
+  height: 100%;
+  width: 100%;
+}
+/* object-fit: contain; */
+.safir {
+  height: 100%;
+  object-fit: contain;
 }
 
 .overlay {
@@ -85,6 +110,8 @@
 .chess {
   display: flex;
   color: white;
+  width: 45%;
+  height: 100%;
 }
 
 .chessPicture {
@@ -112,19 +139,30 @@
 
 .chess-description {
   margin-bottom: 5%;
+  border-radius: 4%;
+  box-shadow: 1px 1px 10px #fffdfd;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2%;
+}
+.chess-description:hover {
+  background-color: rgba(255, 255, 255, 0.296);
+  cursor: pointer;
+}
+.chess-description a {
+  color: white;
 }
 
 .chess--rapid {
-  margin-bottom: 4%;
+  margin-bottom: 5%;
   display: flex;
-  width: 270px;
+  width: 250px;
   justify-content: space-between;
 }
 
 .chess-blitz {
   margin-bottom: 2%;
   display: flex;
-  width: 270px;
+  width: 250px;
   justify-content: space-between;
 }
 
@@ -144,106 +182,48 @@
 
 .photo-container {
   background-image: url("../Images/workout.png");
-  height: 100%;
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-around;
   align-items: end;
-  font-size: 1.4rem;
+  height: 350px;
+  width: 45%;
+  font-size: 1.8rem;
   color: white;
   padding-bottom: 2%;
-}
-
-ul {
   position: relative;
-  display: flex;
-  padding-left: 10%;
-}
-ul li {
-  position: relative;
-  list-style: none;
-  cursor: pointer;
-}
-ul li a {
-  text-decoration: none;
-}
-ul li a .fa-brands {
-  font-size: 4rem;
-  color: #f8f2f2;
-}
-ul li a::before {
-  font-family: "FontAwesome";
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 4rem;
-  height: 0;
-  overflow: hidden;
-  transition: 0.5s ease-in-out;
 }
 
-ul li:nth-child(1) a::before {
-  content: "\f16d";
-  background-image: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* border-bottom: 4px solid #dc2743; */
-}
-
-ul li:hover a::before {
-  height: 100%;
-}
-
-.train {
-  padding-bottom: 1.5rem;
-  padding-right: 10%;
-}
-
-.technology-site {
-  background-image: url("../Images/webdev.png");
-  height: 100%;
+.gloves {
+  background-image: url("../Images/gloves.jpg");
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
-  font-size: 1.4rem;
-  color: white;
+  height: 350px;
+  width: 45%;
+  font-size: 1.8rem;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-top: 40%;
-}
-
-.scrolling-text-container {
-  overflow: hidden;
-  white-space: nowrap;
+  color: white;
   position: relative;
-  width: 100%; /* Adjust to the width of the area you want the text to scroll across */
-  height: 50px; Adjust to the height needed
-
 }
-
-.scrolling-text {
-  display: inline-block;
+.train {
   position: absolute;
-  white-space: nowrap;
-  animation: scroll-text 5s linear infinite;
-  color: rgb(125, 191, 253);
+  padding: 2%;
+  bottom: 40%;
+  border-radius: 2%;
+  box-shadow: 2px 2px 20px #fffdfd;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-@keyframes scroll-text {
-  0%,
-  100% {
-    transform: translateX(-100%); Start off-screen on the left
-  }
-  100% {
-    transform: translateX(330%); /* Fully visible as it moves right */
-  }
+.workout {
+  position: absolute;
+  padding: 2%;
+  bottom: 40%;
+  border-radius: 2%;
+  box-shadow: 2px 2px 20px #000;
+  background-color: rgba(0, 0, 0, 0.2);
 }
