@@ -295,7 +295,8 @@
     width: 100%;
   }
   .expContainer--technology {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
   .statsDescription {
     display: flex;
@@ -323,6 +324,13 @@
   .expContainer--intro--work h1 {
     text-align: center;
   }
+  .technology--heading {
+    margin-left: 0;
+  }
+
+  .technology--content {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 900px) {
@@ -332,10 +340,6 @@
 
   .variables {
     font-size: 14px;
-  }
-
-  .technology--heading {
-    font-size: 1.3rem;
   }
 
   .expContainer--intro--stats h2 {
@@ -361,16 +365,30 @@
   .placeAndTime > p:first-of-type {
     margin-bottom: 7px;
   }
+
+  .additionalMargin {
+    margin-bottom: 60px;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+  .large {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 750px) {
   .technology--heading {
     font-size: 1.1rem;
   }
+  .large {
+    font-size: 1.1rem;
+  }
 
   .expContainer--intro--work h1 {
     padding-bottom: 5px;
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 
   .placeAndTime {
@@ -379,5 +397,18 @@
   }
   .placeAndTime > p:first-of-type {
     margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 750px) {
+  .DateParagraphs {
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+  }
+  .paragraph {
+    margin: 0 auto;
+    padding: 2px 2px;
+    width: 50%;
   }
 }

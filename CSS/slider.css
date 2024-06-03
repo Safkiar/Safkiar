@@ -231,6 +231,12 @@ button:active {
   }
 }
 
+@media (max-width: 1200px) {
+  .testimonial img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 900px) {
   .slider__btn {
     width: 25px;

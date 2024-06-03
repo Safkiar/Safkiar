@@ -39,7 +39,7 @@
 }
 
 .btn {
-  padding: 0.645rem 2rem;
+  padding: 0.67rem 2rem;
   color: rgb(0, 0, 0);
   font-size: 1.4rem;
   position: relative;
@@ -194,6 +194,9 @@
 }
 
 @media (max-width: 650px) {
+  .blackLine {
+    color
+  }
   .navbar {
     flex-direction: column;
   }
@@ -202,8 +205,8 @@
     height: auto;
   }
   .navbar__element {
-    margin-top: 10px;
-    padding: 0.6rem 2rem;
+    margin-top: 0;
+    padding: 1rem 2rem;
     font-size: 1rem;
     width: 180px;
     width: 100vw;
@@ -222,5 +225,8 @@
     width: 220px;
     width: 100vw;
     text-align: center;
+  }
+  .active {
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }
