@@ -1,10 +1,17 @@
 .navbar__container {
-  width: 84vw;
+  width: 86vw;
   margin: 0 auto;
   height: 12vh;
   display: flex;
+  min-height: 60px;
 }
 
+.navbarbox {
+  width: 100%;
+  box-shadow: inset 0px -2px 10px rgba(92, 94, 83, 0.35);
+  /* background-color: red; */
+  background-image: linear-gradient(to bottom right, #ebe6e1, #e2d1c3);
+}
 .navbar {
   display: flex;
   width: 100%;
@@ -21,6 +28,7 @@
   position: relative;
   z-index: 0;
 }
+
 .link--nav {
   color: black;
   position: relative;
@@ -31,7 +39,7 @@
 }
 
 .btn {
-  padding: 0.8rem 2rem;
+  padding: 0.9rem 2rem;
   color: rgb(0, 0, 0);
   font-size: 1.4rem;
   position: relative;
@@ -45,6 +53,7 @@
   background-color: rgb(0, 0, 0);
   width: 100%;
   height: 5%;
+  height: 1.5px;
   position: absolute;
   right: 0;
   z-index: 1;
@@ -54,7 +63,8 @@
   content: "";
   background-color: rgb(0, 0, 0);
   width: 100%;
-  height: 5%;
+  /* height: 5%; */
+  height: 1.5px;
   position: absolute;
   right: 0;
   z-index: 1;
@@ -64,11 +74,13 @@
 .btn::before {
   top: 4%;
   transform: translateX(-100%);
+  /* transform: translateX(0); */
 }
 
 .btn::after {
   bottom: 4%;
   transform: translateX(-100%);
+  /* transform: translateX(0); */
 }
 
 .btn:hover::before,
@@ -86,6 +98,10 @@
   z-index: 10;
   border-bottom: 1px solid rgba(124, 122, 122, 0.185);
   overflow: hidden;
+  display: flex;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar__element::before {
@@ -143,32 +159,36 @@
 }
 
 @media (max-width: 1100px) {
+  .navbar__container {
+    width: 94vw;
+  }
   .navbar__elements {
     width: 80%;
     margin-bottom: 8px;
   }
   .navbar__element {
-    padding: 0.2rem 1.6rem;
+    padding: 0.3rem 1.6rem;
     font-size: 1rem;
+    height: 30px;
   }
 
   .btn {
-    padding: 0.4rem 1.4rem;
+    padding: 0.55rem 1.8rem;
     font-size: 1.1rem;
   }
 }
 
 @media (max-width: 900px) {
   .navbar__elements {
-    width: 9s0%;
+    /* width: 90%; */
   }
   .navbar__element {
     padding: 0.1rem 1.2rem;
-    font-size: 1srem;
+    font-size: 1rem;
   }
 
   .btn {
-    padding: 0.3rem 1.2rem;
+    padding: 0.6rem 1.8rem;
     font-size: 1rem;
   }
 }
@@ -182,10 +202,11 @@
     height: auto;
   }
   .navbar__element {
-    margin: 5px;
-    padding: 0.4rem 2rem;
+    margin-top: 10px;
+    padding: 0.6rem 2rem;
     font-size: 1rem;
     width: 180px;
+    width: 100vw;
     text-align: center;
   }
   .navbar__container {
@@ -196,9 +217,10 @@
     margin-top: 10px;
   }
   .btn {
-    padding: 0.6rem 1.4rem;
+    padding: 0.65rem 1.4rem;
     font-size: 1.2rem;
     width: 220px;
+    width: 100vw;
     text-align: center;
   }
 }

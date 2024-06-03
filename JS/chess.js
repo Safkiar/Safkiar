@@ -1,5 +1,14 @@
+let spin = document.querySelector(".spinner");
+let overlay = document.querySelector(".loadingOverlay");
+
+function SpinnerSwitch() {
+  spin.classList.toggle("switchClass");
+  overlay.classList.toggle("switchClass");
+}
+
 async function fetchUserData() {
   try {
+    SpinnerSwitch();
     const response = await fetch(
       `https://api.chess.com/pub/player/safkiar/stats`
     );
@@ -33,6 +42,7 @@ async function updateCodingTaskElement() {
   drawb[0].innerText = `draws ${chessinfo.chess_blitz.record.draw.toString()}`;
   const ratb = document.getElementsByClassName("elo--b");
   ratb[0].innerText = `${chessinfo.chess_blitz.last.rating.toString()}`;
+  SpinnerSwitch();
 }
 
 updateCodingTaskElement();

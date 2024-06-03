@@ -30,28 +30,30 @@
     />
   </head>
   <body>
-    <nav class="navbar__container">
-      <ul class="navbar">
-        <a class="link--home" href="index.html"
-          ><li class="btn" id="Home">Home</li></a
-        >
-        <div class="navbar__elements">
-          <a class="link--nav" href="Projects.html"
-            ><li class="navbar__element" id="Projects">Projects</li>
-          </a>
-          <a class="link--nav" href="Certificates.html"
-            ><li class="navbar__element" id="Certificates">Certificates</li>
-          </a>
-          <a class="link--nav" href="Experience.html"
-            ><li class="navbar__element" id="Experience">Experience</li></a
+    <div class="navbarbox">
+      <nav class="navbar__container">
+        <ul class="navbar">
+          <a class="link--home" href="index.html"
+            ><li class="btn" id="Home">Home</li></a
           >
-          <a class="link--nav" href="Aboutme.html"
-            ><li class="navbar__element" id="Aboutme">About me</li>
-            <div class="blackLine"></div
-          ></a>
-        </div>
-      </ul>
-    </nav>
+          <div class="navbar__elements">
+            <a class="link--nav" href="Projects.html"
+              ><li class="navbar__element" id="Projects">Projects</li>
+            </a>
+            <a class="link--nav" href="Certificates.html"
+              ><li class="navbar__element" id="Certificates">Certificates</li>
+            </a>
+            <a class="link--nav" href="Experience.html"
+              ><li class="navbar__element" id="Experience">Experience</li></a
+            >
+            <a class="link--nav" href="Aboutme.html"
+              ><li class="navbar__element" id="Aboutme">About me</li>
+              <div class="blackLine"></div
+            ></a>
+          </div>
+        </ul>
+      </nav>
+    </div>
     <div class="container">
       <div class="everything">
         <div class="first-row">
@@ -72,6 +74,8 @@
             </div>
           </div>
           <div class="chess">
+            <div class="loadingOverlay switchClass"></div>
+            <div class="spinner switchClass"></div>
             <div class="chessPicture">
               <div class="chess-link">
                 <i class="fa-solid fa-chess-pawn"></i>
