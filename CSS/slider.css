@@ -254,11 +254,18 @@ button:active {
   .testimonial img {
     width: 100%;
   }
+  .buttons {
+    width: 300px;
+  }
+  .buttons button {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 500px) {
   .buttons {
     width: 300px;
+    margin-top: 40px;
   }
   .buttons button {
     font-size: 0.7rem;
@@ -267,7 +274,7 @@ button:active {
 
 @media (max-width: 350px) {
   .buttons {
-    width: 280px;
+    width: 300px;
   }
   .slider__btn {
     width: 20px;
