@@ -221,6 +221,7 @@ body {
   line-height: 120%;
   border: var(--border);
   transition: all 0.4s;
+  line-height: 1.7;
 }
 
 .first__container__contact {
