@@ -10,6 +10,8 @@
     <script defer src="JS/gradient.js"></script>
     <script defer src="JS/view.js"></script>
     <script defer src="JS/hamburger.js"></script>
+    <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
+    <script defer src="JS/translation.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,24 +32,52 @@
       <nav class="navbar__container">
         <ul class="navbar">
           <a class="link--home" href="index.html"
-            ><li class="btn" id="Home">Home</li></a
-          >
+            ><li class="btn" id="Home" data-i18n="navHome"></li
+          ></a>
           <div class="navbar__elements">
             <a class="link--nav active" href="Projects.html"
-              ><li class="navbar__element" id="Projects">Projects</li>
+              ><li
+                class="navbar__element"
+                id="Projects"
+                data-i18n="navProjects"
+              ></li>
               <div class="blackLine"></div
             ></a>
             <a class="link--nav" href="Certificates.html"
-              ><li class="navbar__element" id="Certificates">
-                Certificates
-              </li></a
-            >
+              ><li
+                class="navbar__element"
+                id="Certificates"
+                data-i18n="navCertificates"
+              ></li
+            ></a>
             <a class="link--nav" href="Experience.html"
-              ><li class="navbar__element" id="Experience">Experience</li></a
-            >
+              ><li
+                class="navbar__element"
+                id="Experience"
+                data-i18n="navExperience"
+              ></li
+            ></a>
             <a class="link--nav" href="Aboutme.html"
-              ><li class="navbar__element" id="Aboutme">About me</li></a
-            >
+              ><li
+                class="navbar__element"
+                id="Aboutme"
+                data-i18n="navAbout"
+              ></li
+            ></a>
+          </div>
+          <div class="engpol">
+            <div class="england" onclick="changeLanguage('en')">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png"
+                alt="Union Jack"
+              />
+            </div>
+            <div class="poland" onclick="changeLanguage('pl')">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1920px-Flag_of_Poland.svg.png"
+                alt="Flag of Poland"
+              />
+            </div>
           </div>
         </ul>
       </nav>
@@ -60,22 +90,48 @@
       </div>
       <nav class="mobileNav">
         <a class="link--home" href="index.html"
-          ><li class="btn" id="Home">Home</li>
+          ><li class="btn" id="Home" data-i18n="navHome"></li>
         </a>
         <div class="navbar__elements">
           <a class="link--nav" href="Projects.html"
-            ><li class="navbar__element active" id="Projects">Projects</li>
+            ><li
+              class="navbar__element active"
+              id="Projects"
+              data-i18n="navProjects"
+            ></li>
             <div class="blackLine"></div
           ></a>
           <a class="link--nav" href="Certificates.html"
-            ><li class="navbar__element" id="Certificates">Certificates</li></a
-          >
+            ><li
+              class="navbar__element"
+              id="Certificates"
+              data-i18n="navCertificates"
+            ></li
+          ></a>
           <a class="link--nav" href="Experience.html"
-            ><li class="navbar__element" id="Experience">Experience</li></a
-          >
+            ><li
+              class="navbar__element"
+              id="Experience"
+              data-i18n="navExperience"
+            ></li
+          ></a>
           <a class="link--nav" href="Aboutme.html"
-            ><li class="navbar__element" id="Aboutme">About me</li>
+            ><li class="navbar__element" id="Aboutme" data-i18n="navAbout"></li>
           </a>
+        </div>
+        <div class="engpol">
+          <div class="england" onclick="changeLanguage('en')">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png"
+              alt="Union Jack"
+            />
+          </div>
+          <div class="poland" onclick="changeLanguage('pl')">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1920px-Flag_of_Poland.svg.png"
+              alt="Flag of Poland"
+            />
+          </div>
         </div>
       </nav>
     </div>
@@ -91,15 +147,7 @@
           <div class="portfolio__text">
             <div class="text--heading">The Wild Oasis</div>
             <div class="hr-div"></div>
-            <div class="text--paragraph">
-              The booking management app built with React, React Query, and
-              Supabase offers comprehensive features including booking and cabin
-              management with editable details. It provides real-time statistics
-              and interactive charts, supports dark mode, and is fully
-              responsive. User authentication and settings are securely handled
-              through Supabase, demonstrating proficiency in modern frontend
-              technologies and effective backend integration.
-            </div>
+            <div class="text--paragraph" data-i18n="p5"></div>
             <div class="portfolio__technology">
               <p class="yell">Styled-components</p>
               <p>React</p>
@@ -119,16 +167,7 @@
           <div class="portfolio__text">
             <div class="text--heading">Mix React</div>
             <div class="hr-div"></div>
-            <div class="text--paragraph">
-              Mix React project is a dynamic web application that offers a
-              variety of interface solutions. It encompasses a wide range of
-              features such as informational cards, interactive quizzes, a
-              finance management module resembling online banking, a currency
-              converter facilitating quick calculations, as well as tools for
-              handling dates. It's a comprehensive environment that combines
-              diverse interface components, providing users with a rich
-              experience in utilizing various functions all in one place.
-            </div>
+            <div class="text--paragraph" data-i18n="p4"></div>
             <div class="portfolio__technology">
               <p class="yell">CSS</p>
               <p>React</p>
@@ -146,12 +185,7 @@
           <div class="portfolio__text">
             <div class="text--heading">Fast React Pizza</div>
             <div class="hr-div"></div>
-            <div class="text--paragraph">
-              Pizza ordering app, developed with Tailwind CSS, offers a seamless
-              user experience for ordering pizza online. Users can easily browse
-              through a variety of pizzas, add them to their cart and securely
-              checkout using their preferred payment method.
-            </div>
+            <div class="text--paragraph" data-i18n="p3"></div>
             <div class="portfolio__technology">
               <p class="yell">Tailwind</p>
               <p>React</p>
@@ -170,16 +204,7 @@
           <div class="portfolio__text">
             <div class="text--heading">Mini Chess</div>
             <div class="hr-div"></div>
-            <div class="text--paragraph">
-              Mini Chess is an innovative 6x8 adaptation of traditional chess,
-              incorporating full game rules including castling, en passant, and
-              pawn promotion. This streamlined version amplifies strategic
-              intricacies by condensing the battlefield, compelling players to
-              engage in complex tactics and maneuvers within a compact space. It
-              stands as a testament to skillful game design and programming,
-              ideal for those seeking to refine their chess strategy in a novel
-              format.
-            </div>
+            <div class="text--paragraph" data-i18n="p2"></div>
             <div class="portfolio__technology">
               <p class="yell">CSS</p>
               <p>JavaScript</p>
@@ -197,18 +222,7 @@
           <div class="portfolio__text">
             <div class="text--heading">Forkify</div>
             <div class="hr-div"></div>
-            <div class="text--paragraph">
-              Forkify is your culinary companion, bringing a world of flavors
-              right to your fingertips. This elegant recipe finder allows food
-              enthusiasts to explore over a million recipes with ease. Utilizing
-              a comprehensive API, Forkify not only helps users search for
-              recipes but also provides features to save and organize favorite
-              dishes into a personal collection. Its intuitive interface and
-              robust functionality cater to the modern cook’s needs, making it
-              simple to discover new meals and master culinary skills. Built
-              with an MVC structure, Forkify exemplifies streamlined design and
-              efficient data management for an optimal user experience
-            </div>
+            <div class="text--paragraph" data-i18n="p1"></div>
             <div class="portfolio__technology">
               <p class="yell">SCSS</p>
               <p>JavaScript</p>

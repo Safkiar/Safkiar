@@ -11,6 +11,8 @@
     <script defer src="JS/view.js"></script>
     <script defer src="JS/slider.js"></script>
     <script defer src="JS/hamburger.js"></script>
+    <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
+    <script defer src="JS/translation.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,24 +33,52 @@
       <nav class="navbar__container">
         <ul class="navbar">
           <a class="link--home" href="index.html"
-            ><li class="btn" id="Home">Home</li></a
-          >
+            ><li class="btn" id="Home" data-i18n="navHome"></li
+          ></a>
           <div class="navbar__elements">
             <a class="link--nav" href="Projects.html"
-              ><li class="navbar__element" id="Projects">Projects</li>
+              ><li
+                class="navbar__element"
+                id="Projects"
+                data-i18n="navProjects"
+              ></li>
             </a>
             <a class="link--nav" href="Certificates.html"
-              ><li class="navbar__element active" id="Certificates">
-                Certificates
-              </li>
+              ><li
+                class="navbar__element active"
+                id="Certificates"
+                data-i18n="navCertificates"
+              ></li>
               <div class="blackLine"></div>
             </a>
             <a class="link--nav" href="Experience.html"
-              ><li class="navbar__element" id="Experience">Experience</li></a
-            >
+              ><li
+                class="navbar__element"
+                id="Experience"
+                data-i18n="navExperience"
+              ></li
+            ></a>
             <a class="link--nav" href="Aboutme.html"
-              ><li class="navbar__element" id="Aboutme">About me</li></a
-            >
+              ><li
+                class="navbar__element"
+                id="Aboutme"
+                data-i18n="navAbout"
+              ></li
+            ></a>
+          </div>
+          <div class="engpol">
+            <div class="england" onclick="changeLanguage('en')">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png"
+                alt="Union Jack"
+              />
+            </div>
+            <div class="poland" onclick="changeLanguage('pl')">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1920px-Flag_of_Poland.svg.png"
+                alt="Flag of Poland"
+              />
+            </div>
           </div>
         </ul>
       </nav>
@@ -61,25 +91,49 @@
       </div>
       <nav class="mobileNav">
         <a class="link--home" href="index.html"
-          ><li class="btn" id="Home">Home</li>
+          ><li class="btn" id="Home" data-i18n="navHome"></li>
         </a>
         <div class="navbar__elements">
           <a class="link--nav" href="Projects.html"
-            ><li class="navbar__element" id="Projects">Projects</li></a
-          >
+            ><li
+              class="navbar__element"
+              id="Projects"
+              data-i18n="navProjects"
+            ></li
+          ></a>
           <a class="link--nav" href="Certificates.html"
-            ><li class="navbar__element active" id="Certificates">
-              Certificates
-            </li>
+            ><li
+              class="navbar__element active"
+              id="Certificates"
+              data-i18n="navCertificates"
+            ></li>
             <div class="blackLine"></div
           ></a>
 
           <a class="link--nav" href="Experience.html"
-            ><li class="navbar__element" id="Experience">Experience</li></a
-          >
+            ><li
+              class="navbar__element"
+              id="Experience"
+              data-i18n="navExperience"
+            ></li
+          ></a>
           <a class="link--nav" href="Aboutme.html"
-            ><li class="navbar__element" id="Aboutme">About me</li></a
-          >
+            ><li class="navbar__element" id="Aboutme" data-i18n="navAbout"></li
+          ></a>
+        </div>
+        <div class="engpol">
+          <div class="england" onclick="changeLanguage('en')">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png"
+              alt="Union Jack"
+            />
+          </div>
+          <div class="poland" onclick="changeLanguage('pl')">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1920px-Flag_of_Poland.svg.png"
+              alt="Flag of Poland"
+            />
+          </div>
         </div>
       </nav>
     </div>
@@ -95,7 +149,7 @@
           >
             Web Development
           </button>
-          <button class="certificates__button__two">Other diplomas</button>
+          <button class="certificates__button__two" data-i18n="dyplom"></button>
         </div>
       </div>
       <section class="section WebDevelopment">

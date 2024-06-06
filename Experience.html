@@ -11,6 +11,8 @@
     <script defer src="JS/view.js"></script>
     <script defer src="JS/codewars.js"></script>
     <script defer src="JS/hamburger.js"></script>
+    <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
+    <script defer src="JS/translation.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,24 +37,52 @@
       <nav class="navbar__container">
         <ul class="navbar">
           <a class="link--home" href="index.html"
-            ><li class="btn" id="Home">Home</li></a
-          >
+            ><li class="btn" id="Home" data-i18n="navHome"></li
+          ></a>
           <div class="navbar__elements">
             <a class="link--nav" href="Projects.html"
-              ><li class="navbar__element" id="Projects">Projects</li>
+              ><li
+                class="navbar__element"
+                id="Projects"
+                data-i18n="navProjects"
+              ></li>
             </a>
             <a class="link--nav" href="Certificates.html"
-              ><li class="navbar__element" id="Certificates">Certificates</li>
+              ><li
+                class="navbar__element"
+                id="Certificates"
+                data-i18n="navCertificates"
+              ></li>
             </a>
             <a class="link--nav" href="Experience.html"
-              ><li class="navbar__element active" id="Experience">
-                Experience
-              </li>
+              ><li
+                class="navbar__element active"
+                id="Experience"
+                data-i18n="navExperience"
+              ></li>
               <div class="blackLine"></div
             ></a>
             <a class="link--nav" href="Aboutme.html"
-              ><li class="navbar__element" id="Aboutme">About me</li></a
-            >
+              ><li
+                class="navbar__element"
+                id="Aboutme"
+                data-i18n="navAbout"
+              ></li
+            ></a>
+          </div>
+          <div class="engpol">
+            <div class="england" onclick="changeLanguage('en')">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png"
+                alt="Union Jack"
+              />
+            </div>
+            <div class="poland" onclick="changeLanguage('pl')">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1920px-Flag_of_Poland.svg.png"
+                alt="Flag of Poland"
+              />
+            </div>
           </div>
         </ul>
       </nav>
@@ -65,22 +95,48 @@
       </div>
       <nav class="mobileNav">
         <a class="link--home" href="index.html"
-          ><li class="btn" id="Home">Home</li>
+          ><li class="btn" id="Home" data-i18n="navHome"></li>
         </a>
         <div class="navbar__elements">
           <a class="link--nav" href="Projects.html"
-            ><li class="navbar__element" id="Projects">Projects</li></a
-          >
+            ><li
+              class="navbar__element"
+              id="Projects"
+              data-i18n="navProjects"
+            ></li
+          ></a>
           <a class="link--nav" href="Certificates.html"
-            ><li class="navbar__element" id="Certificates">Certificates</li></a
-          >
+            ><li
+              class="navbar__element"
+              id="Certificates"
+              data-i18n="navCertificates"
+            ></li
+          ></a>
           <a class="link--nav" href="Experience.html"
-            ><li class="navbar__element active" id="Experience">Experience</li>
+            ><li
+              class="navbar__element active"
+              id="Experience"
+              data-i18n="navExperience"
+            ></li>
             <div class="blackLine"></div
           ></a>
           <a class="link--nav" href="Aboutme.html"
-            ><li class="navbar__element" id="Aboutme">About me</li></a
-          >
+            ><li class="navbar__element" id="Aboutme" data-i18n="navAbout"></li
+          ></a>
+        </div>
+        <div class="engpol">
+          <div class="england" onclick="changeLanguage('en')">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png"
+              alt="Union Jack"
+            />
+          </div>
+          <div class="poland" onclick="changeLanguage('pl')">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1920px-Flag_of_Poland.svg.png"
+              alt="Flag of Poland"
+            />
+          </div>
         </div>
       </nav>
     </div>
@@ -88,51 +144,41 @@
       <div class="expContainer">
         <div class="expContainer--intro">
           <div class="expContainer--intro--work">
-            <h1>Work Experience</h1>
+            <h1 data-i18n="WorkExp"></h1>
             <div class="placeAndTime">
               <div class="DateParagraphs">
-                <div class="paragraph">Joined</div>
-                <div class="paragraph joined">September 2021</div>
-                <div class="paragraph">Left position</div>
-                <div class="paragraph still">Still employed</div>
+                <div class="paragraph" data-i18n="joined"></div>
+                <div class="paragraph joined" data-i18n="data"></div>
+                <div class="paragraph" data-i18n="end"></div>
+                <div class="paragraph still" data-i18n="still"></div>
                 <div class="large largeMain">
                   Process officer in Anti Money Laudering Team at Nordea
                 </div>
-                <div class="large">
-                  Business Banking Sector with Exception Handling and IT support
-                </div>
+                <div class="large" data-i18n="sector"></div>
                 <div class="large additionalMargin">
                   Junior Process Officer ➡ Process Officer
                 </div>
-                <div class="paragraph">Joined</div>
-                <div class="paragraph joined">October 2016</div>
-                <div class="paragraph">Left position</div>
-                <div class="paragraph left">July 2021</div>
-                <div class="large largeMain">
-                  Master`s degree, Industraial and Organizational Psychology,
-                  University of Łódź
-                </div>
-                <div class="large">
-                  During this time I also worked as a personal trainer for 2
-                  years, completed a 2-year medical school as a massage
-                  therapist, did internships as a recruiter and psychologist in
-                  a psychiatric hospital, and worked as a waiter
-                </div>
+                <div class="paragraph" data-i18n="joined"></div>
+                <div class="paragraph joined" data-i18n="joined2"></div>
+                <div class="paragraph" data-i18n="end"></div>
+                <div class="paragraph left" data-i18n="still2">J</div>
+                <div class="large largeMain" data-i18n="psycholog"></div>
+                <div class="large" data-i18n="opis"></div>
               </div>
             </div>
           </div>
           <div class="expContainer--intro--stats">
-            <h2>Statistics</h2>
+            <h2 data-i18n="staty"></h2>
             <div class="statsDescription">
-              <p>Coding courses</p>
+              <p data-i18n="kursy"></p>
               <p>228 h</p>
             </div>
             <div class="statsDescription">
-              <p>Finished projects</p>
+              <p data-i18n="projekty"></p>
               <p>6</p>
             </div>
             <div class="statsDescription">
-              <p>Finished coding tasks</p>
+              <p data-i18n="taski"></p>
               <p class="codingTask"></p>
             </div>
           </div>
@@ -140,7 +186,7 @@
 
         <div class="expContainer--technology">
           <div class="technology--heading">
-            <h1>Skills</h1>
+            <h1 data-i18n="skl"></h1>
           </div>
           <div class="technology--content">
             <div class="variables">

@@ -414,3 +414,9 @@
     width: 50%;
   }
 }
+
+@media (max-width: 650px) {
+  .expContainer--intro--work {
+    margin-top: 45px;
+  }
+}

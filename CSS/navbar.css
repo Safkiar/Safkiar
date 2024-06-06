@@ -40,7 +40,7 @@
 
 .navbar__elements {
   display: flex;
-  width: 1000px;
+  width: 1200px;
   height: 50px;
   justify-content: space-around;
   align-items: center;
@@ -163,6 +163,47 @@
   transition: transform 0.5s ease;
 }
 
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hiddenSticker {
+  display: none;
+  transition: opacity 5s ease-in-out;
+}
+
+.england,
+.poland {
+  width: 30px;
+  height: 20px;
+}
+
+.england {
+  margin-right: 10px;
+}
+
+.england img,
+.poland img {
+  width: 30px;
+  height: 20px;
+  border: 1px solid rgb(91, 91, 91);
+}
+
+.england img:hover,
+.poland img:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgb(91, 91, 91);
+}
+
+.engpol {
+  display: flex;
+  position: absolute;
+  right: 2%;
+}
+
 @media (max-width: 1500px) {
   .navbar__elements {
     width: 80%;
@@ -177,14 +218,22 @@
     font-size: 1.3rem;
   }
 }
+@media (max-width: 1200px) {
+  .navbar__element {
+    padding: 0.3rem 1.6rem;
+    font-size: 1rem;
+    height: 30px;
+  }
+}
 
 @media (max-width: 1100px) {
   .navbar__container {
     width: 94vw;
   }
   .navbar__elements {
-    width: 80%;
+    width: 70%;
     margin-bottom: 8px;
+    margin-right: 8%;
   }
   .navbar__element {
     padding: 0.3rem 1.6rem;
@@ -199,17 +248,39 @@
 }
 
 @media (max-width: 900px) {
-  .navbar__elements {
-    /* width: 90%; */
-  }
   .navbar__element {
     padding: 0.1rem 1rem;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    margin-right: 10px;
+  }
+
+  .england img,
+  .poland img {
+    width: 25px;
+    height: 18px;
+  }
+
+  .england {
+    margin-right: 4px;
+  }
+
+  .engpol {
+    right: 1%;
   }
 
   .btn {
-    padding: 0.6rem 1.8rem;
-    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 750px) {
+  .navbar__element {
+    font-size: 0.75rem;
+    margin-right: 0;
+  }
+  .btn {
+    padding: 0.4rem 1.3rem;
+    margin: 0;
   }
 }
 
@@ -222,10 +293,11 @@
     height: auto;
     width: 100%;
     /* gap: 10px; */
+    margin: 0;
   }
   .navbar__element {
     margin-top: 0;
-    padding: 1rem 0.78rem;
+    padding: 1.2rem 0.78rem;
     font-size: 1.1rem;
     width: 100%;
     height: 40px;
@@ -277,9 +349,31 @@
   .hamburger:hover {
     cursor: pointer;
   }
+  .engpol {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    margin-top: 10px;
+  }
+  .england {
+    margin-left: 10%;
+  }
+
+  .poland {
+    margin-right: 8.5%;
+    margin-left: 19px;
+  }
+
+  .england img,
+  .poland img {
+    width: 30px;
+    height: 20px;
+  }
 
   .mobileNav {
-    height: 350px;
+    height: 500px;
     background-color: white;
     width: 100vw;
     display: flex;
@@ -288,12 +382,13 @@
     align-items: center;
     position: fixed;
     gap: 21px;
-    top: -350px;
-    padding: 16px;
+    right: -635px;
+    padding: 5px 0;
     transition: transform 0.4s ease-in-out;
     background-image: linear-gradient(to bottom right, #ebe6e1, #e2d1c3);
     box-shadow: inset 0px -2px 10px rgba(92, 94, 83, 0.35);
     z-index: 100000;
+    margin-top: 20px;
   }
 
   .link--nav {
@@ -310,14 +405,14 @@
   .bar3 {
     background-color: black;
     height: 4px;
-    width: 36px;
+    width: 28px;
     margin: 3px;
     border-radius: 10px;
   }
 }
 
 .openDrawer {
-  transform: translateY(350px);
+  transform: translateX(-635px);
 }
 
 .animateBar1 {
@@ -335,7 +430,7 @@
     transform: rotate(0);
   }
   to {
-    transform: rotate(45deg) translate(4px, 10px);
+    transform: translateX(5px) rotate(45deg) translate(4px, 10px);
   }
 }
 
@@ -355,18 +450,6 @@
     transform: rotate(0);
   }
   to {
-    transform: rotate(-45deg) translate(4px, -10px);
+    transform: translateX(5px) rotate(-45deg) translate(4px, -10px);
   }
-}
-
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hiddenSticker {
-  display: none;
-  transition: opacity 5s ease-in-out;
 }

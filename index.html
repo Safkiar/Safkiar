@@ -9,6 +9,8 @@
     <script defer src="JS/gradient.js"></script>
     <script defer src="JS/view.js"></script>
     <script defer src="JS/hamburger.js"></script>
+    <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
+    <script defer src="JS/translation.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,25 +36,53 @@
       <nav class="navbar__container">
         <ul class="navbar">
           <a class="link--home" href="index.html"
-            ><li class="btn active" id="Home">Home</li>
+            ><li class="btn active" id="Home" data-i18n="navHome"></li>
             <div class="blackLine"></div>
             <div class="blackLine2"></div>
           </a>
           <div class="navbar__elements">
             <a class="link--nav" href="Projects.html"
-              ><li class="navbar__element" id="Projects">Projects</li></a
-            >
+              ><li
+                class="navbar__element"
+                id="Projects"
+                data-i18n="navProjects"
+              ></li
+            ></a>
             <a class="link--nav" href="Certificates.html"
-              ><li class="navbar__element" id="Certificates">
-                Certificates
-              </li></a
-            >
+              ><li
+                class="navbar__element"
+                id="Certificates"
+                data-i18n="navCertificates"
+              ></li
+            ></a>
             <a class="link--nav" href="Experience.html"
-              ><li class="navbar__element" id="Experience">Experience</li></a
-            >
+              ><li
+                class="navbar__element"
+                id="Experience"
+                data-i18n="navExperience"
+              ></li
+            ></a>
             <a class="link--nav" href="Aboutme.html"
-              ><li class="navbar__element" id="Aboutme">About me</li></a
-            >
+              ><li
+                class="navbar__element"
+                id="Aboutme"
+                data-i18n="navAbout"
+              ></li
+            ></a>
+          </div>
+          <div class="engpol">
+            <div class="england" onclick="changeLanguage('en')">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png"
+                alt="Union Jack"
+              />
+            </div>
+            <div class="poland" onclick="changeLanguage('pl')">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1920px-Flag_of_Poland.svg.png"
+                alt="Flag of Poland"
+              />
+            </div>
           </div>
         </ul>
       </nav>
@@ -65,23 +95,49 @@
       </div>
       <nav class="mobileNav">
         <a class="link--home" href="index.html"
-          ><li class="btn active" id="Home">Home</li>
+          ><li class="btn active" id="Home" data-i18n="navHome"></li>
           <div class="blackLine"></div>
           <div class="blackLine2"></div>
         </a>
         <div class="navbar__elements">
           <a class="link--nav" href="Projects.html"
-            ><li class="navbar__element" id="Projects">Projects</li></a
-          >
+            ><li
+              class="navbar__element"
+              id="Projects"
+              data-i18n="navProjects"
+            ></li
+          ></a>
           <a class="link--nav" href="Certificates.html"
-            ><li class="navbar__element" id="Certificates">Certificates</li></a
-          >
+            ><li
+              class="navbar__element"
+              id="Certificates"
+              data-i18n="navCertificates"
+            ></li
+          ></a>
           <a class="link--nav" href="Experience.html"
-            ><li class="navbar__element" id="Experience">Experience</li></a
-          >
+            ><li
+              class="navbar__element"
+              id="Experience"
+              data-i18n="navExperience"
+            ></li
+          ></a>
           <a class="link--nav" href="Aboutme.html"
-            ><li class="navbar__element" id="Aboutme">About me</li></a
-          >
+            ><li class="navbar__element" id="Aboutme" data-i18n="navAbout"></li
+          ></a>
+        </div>
+        <div class="engpol">
+          <div class="england" onclick="changeLanguage('en')">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png"
+              alt="Union Jack"
+            />
+          </div>
+          <div class="poland" onclick="changeLanguage('pl')">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1920px-Flag_of_Poland.svg.png"
+              alt="Flag of Poland"
+            />
+          </div>
         </div>
       </nav>
     </div>
@@ -89,36 +145,14 @@
       <div class="container__home">
         <div class="first__container__content">
           <div class="container__h1">
-            <h1>Kikowski Michał</h1>
-            <h1>Front Web Developer</h1>
+            <h1 data-i18n="welcome_message"></h1>
           </div>
           <hr class="hrIndex" />
-          <h2>
-            As a self-taught front-end web developer, my enthusiasm for
-            technology and programming is not just a professional choice—it’s a
-            personal passion that I actively pursue each day, without exception.
-            My dedication to this field is unwavering, and I am eager to
-            transition this fervent commitment into a professional setting where
-            I can contribute to the success of an organization while
-            simultaneously refining my skills.
-          </h2>
+          <h2 data-i18n="firstHeading"></h2>
           <hr class="hrIndex" />
-          <h2>
-            I have devoted numerous hours to comprehensive courses to bolster my
-            knowledge base, successfully completed a substantial number of
-            coding exercises and "kumite" challenges, and brought several
-            projects to completion. I invite you to review these accomplishments
-            of my portfolio.
-          </h2>
+          <h2 data-i18n="secondHeading"></h2>
           <hr class="hrIndex" />
-          <h2>
-            With a hunger for learning and a goal to excel in the craft of
-            programming, I am in search of a role that presents new challenges
-            and opportunities for growth. If you are looking for a developer
-            with an insatiable drive and a relentless approach to innovation, I
-            would be delighted to discuss how my skills and ambitions align with
-            the goals of your company.
-          </h2>
+          <h2 data-i18n="thirdHeading"></h2>
         </div>
         <div class="first__container__contact">
           <img class="portret" src="./Images/Ja.jpg" />
