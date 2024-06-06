@@ -420,3 +420,31 @@
     margin-top: 45px;
   }
 }
+
+@keyframes ColorEx {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #ffd43b;
+  }
+}
+
+.firstStar {
+  animation: ColorEx 0.8s linear forwards;
+}
+
+.secondStar {
+  animation: ColorEx 0.8s linear forwards;
+  animation-delay: 0.3s; /* Delay the animation start by 1 second */
+}
+
+.thirdStar {
+  animation: ColorEx 0.8s linear forwards;
+  animation-delay: 0.6s;
+}
+
+.forthStar {
+  animation: ColorEx 0.8s linear forwards;
+  animation-delay: 0.9s;
+}
