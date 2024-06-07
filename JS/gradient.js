@@ -1,28 +1,3 @@
-// const obsOptions = {
-//   root: null,
-//   threshold: 0.5, // Trigger when 50% of the element is in view
-// };
-
-// let isSticky = false;
-
-// const obsCallback = function (entries) {
-//   entries.forEach((entry) => {
-//     if (!entry.isIntersecting && !isSticky) {
-//       // Element is starting to go out of view, make it sticky
-//       entry.target.classList.add("sticky");
-//       isSticky = true;
-//     } else if (entry.isIntersecting && isSticky) {
-//       // Element is fully in view, remove sticky
-//       entry.target.classList.remove("sticky");
-//       isSticky = false;
-//     }
-//   });
-// };
-
-// const observer = new IntersectionObserver(obsCallback, obsOptions);
-
-// const stickyElement = document.getElementById("stickyElement");
-// observer.observe(stickyElement);
 let isSticky = false;
 
 const stickyElement = document.getElementById("stickyElement");
@@ -36,14 +11,12 @@ const stickyOffset = stickyElement.offsetTop;
 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > stickyOffset && !isSticky) {
-    // Element is starting to go out of view, make it sticky
     stickyElement.classList.add("sticky");
-    placeholder.style.display = "block"; // Display the placeholder to avoid content jump
+    placeholder.style.display = "block";
     isSticky = true;
   } else if (window.pageYOffset <= stickyOffset && isSticky) {
-    // Element is fully in view, remove sticky
     stickyElement.classList.remove("sticky");
-    placeholder.style.display = "none"; // Hide the placeholder
+    placeholder.style.display = "none";
     isSticky = false;
   }
 });
@@ -62,4 +35,48 @@ window.addEventListener("scroll", function () {
   } else {
     element.classList.remove("hiddenSticker");
   }
+});
+
+const allSections = document.querySelectorAll(".section");
+const allSections2 = document.querySelectorAll(".section2");
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.add("movement");
+  observer.unobserve(entry.target);
+  if (entry.target.classList[0] === "section") {
+    document.querySelectorAll(".firstStar").forEach(function (element) {
+      element.classList.add("firstStarMove");
+    });
+    document.querySelectorAll(".secondStar").forEach(function (element) {
+      element.classList.add("secondStarMove");
+    });
+    document.querySelectorAll(".thirdStar").forEach(function (element) {
+      element.classList.add("thirdStarMove");
+    });
+    document.querySelectorAll(".forthStar").forEach(function (element) {
+      element.classList.add("forthStarMove");
+    });
+  }
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.1,
+});
+
+const sectionObserver2 = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.01,
+});
+
+allSections.forEach(function (section) {
+  section.classList.add("hidden");
+  sectionObserver.observe(section);
+});
+
+allSections2.forEach(function (section) {
+  // section.classList.add("hidden");
+  sectionObserver2.observe(section);
 });

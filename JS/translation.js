@@ -32,9 +32,10 @@ i18next.init(
           psycholog:
             "Master`s degree, Career Counseling and Organizational Psychology, University of Łódź",
           opis: "During this time I worked as a personal trainer for 2 years, completed a 2-year medical school as a massage therapist, did internships as a recruiter and psychologist in a psychiatric hospital, and worked as a waiter",
-          staty: "Statistic",
+          staty: "Statistics",
           kursy: "Coding courses",
           projekty: "Finished projects",
+          taski: "Finished tasks",
           skl: "Skills",
           dyplom: "Other diplomas",
           p5: "The booking management app built with React, React Query, and Supabase offers comprehensive features including booking and cabin management with editable details. It provides real-time statistics and interactive charts, supports dark mode, and is fully responsive. User authentication and settings are securely handled through Supabase, demonstrating proficiency in modern frontend technologies and effective backend integration.",

@@ -12,14 +12,7 @@
 }
 
 .expContainer--intro {
-  width: 80%;
-  border: var(--bar);
-}
-
-.expContainer--technology {
-  width: 20%;
-  text-align: center;
-  letter-spacing: 0.5px;
+  width: 100%;
   border: var(--bar);
 }
 
@@ -44,8 +37,8 @@
   font-weight: bold;
   border: var(--bar);
   transition: all 0.2s ease;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin: 3% auto;
+  width: 40%;
   letter-spacing: 1px;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
 }
@@ -172,75 +165,6 @@
 .left {
   background-color: rgba(120, 71, 78, 0.0921);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
-}
-
-.technology--heading {
-  font-size: 1.7rem;
-  font-weight: bold;
-  border: var(--bar);
-  transition: all 0.2s ease;
-  margin-top: 10%;
-  margin-left: 10%;
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
-}
-
-.technology--content {
-  margin-left: 10%;
-  display: flex;
-  border: var(--bar);
-  transition: all 0.2s ease;
-  background-color: rgba(255, 255, 255, 0.262);
-}
-
-.variables {
-  width: 50%;
-  border: var(--bar);
-  font-size: 20px;
-}
-
-.variables p {
-  text-align: start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: var(--bar);
-  height: 20px;
-  /* margin-top: 10px; */
-  /* margin-bottom: 10px; */
-  transition: all 0.2s ease;
-  padding: 26px 0;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
-  box-shadow: 0px 5px 5px rgba(197, 194, 194, 0.1);
-}
-
-.variables p:last-child {
-  border-bottom: none;
-}
-
-.stars {
-  width: 50%;
-  font-size: 18px;
-  border: var(--bar);
-}
-
-.stars p {
-  text-align: start;
-  border: var(--bar);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20px;
-  /* margin-bottom: 10px; */
-  /* margin-top: 10px; */
-  transition: all 0.2s ease;
-  padding: 26px 0;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
-  box-shadow: 0px 5px 5px rgba(197, 194, 194, 0.1);
-}
-
-.stars p:last-child {
-  border-bottom: none;
 }
 
 @media (max-width: 1600px) {
@@ -419,32 +343,4 @@
   .expContainer--intro--work {
     margin-top: 45px;
   }
-}
-
-@keyframes ColorEx {
-  0% {
-    color: white;
-  }
-  100% {
-    color: #ffd43b;
-  }
-}
-
-.firstStar {
-  animation: ColorEx 0.8s linear forwards;
-}
-
-.secondStar {
-  animation: ColorEx 0.8s linear forwards;
-  animation-delay: 0.3s; /* Delay the animation start by 1 second */
-}
-
-.thirdStar {
-  animation: ColorEx 0.8s linear forwards;
-  animation-delay: 0.6s;
-}
-
-.forthStar {
-  animation: ColorEx 0.8s linear forwards;
-  animation-delay: 0.9s;
 }
