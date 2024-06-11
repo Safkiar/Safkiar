@@ -46,6 +46,19 @@ const revealSection = function (entries, observer) {
   entry.target.classList.add("movement");
   observer.unobserve(entry.target);
   if (entry.target.classList[0] === "section") {
+  }
+};
+
+function addClassAfterDelay(elementId, className, delay) {
+  setTimeout(function () {
+    let element = document.querySelector(`.${elementId}`);
+    if (element) {
+      element.classList.add(className);
+    }
+  }, delay);
+}
+function addStars(delay) {
+  setTimeout(function () {
     document.querySelectorAll(".firstStar").forEach(function (element) {
       element.classList.add("firstStarMove");
     });
@@ -58,25 +71,12 @@ const revealSection = function (entries, observer) {
     document.querySelectorAll(".forthStar").forEach(function (element) {
       element.classList.add("forthStarMove");
     });
-  }
-};
+  }, delay);
+}
 
-const sectionObserver = new IntersectionObserver(revealSection, {
-  root: null,
-  threshold: 0.1,
-});
-
-const sectionObserver2 = new IntersectionObserver(revealSection, {
-  root: null,
-  threshold: 0.01,
-});
-
-allSections.forEach(function (section) {
-  section.classList.add("hidden");
-  sectionObserver.observe(section);
-});
-
-allSections2.forEach(function (section) {
-  // section.classList.add("hidden");
-  sectionObserver2.observe(section);
-});
+addClassAfterDelay("firstH", "visibleHeader", 900);
+addClassAfterDelay("secondH", "visibleHeader", 1900);
+addClassAfterDelay("thirdH", "visibleHeader", 2900);
+addClassAfterDelay("fourthH", "visibleHeader", 3900);
+addClassAfterDelay("expContainer--technology", "visibleHeader", 4900);
+addStars(4900);

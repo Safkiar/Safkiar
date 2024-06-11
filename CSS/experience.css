@@ -122,6 +122,19 @@
   line-height: 1.5;
 }
 
+.DateParagraphs .paragraph:nth-child(1) {
+  grid-column: 2 / 3;
+}
+.DateParagraphs .paragraph:nth-child(2) {
+  grid-column: 3 / 4;
+}
+.elementFirst {
+  grid-column: 2 / 3;
+}
+.elementSecond {
+  grid-column: 3 / 4;
+}
+
 .paragraph {
   padding: 1%;
   margin-bottom: 3%;

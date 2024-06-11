@@ -261,20 +261,10 @@ button:active {
     font-size: 0.9rem;
   }
 }
-
-@media (max-width: 500px) {
+= @media (max-width: 400px) {
   .buttons {
     width: 300px;
-    margin-top: 40px;
-  }
-  .buttons button {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 350px) {
-  .buttons {
-    width: 300px;
+    margin-top: 30px;
   }
   .slider__btn {
     width: 20px;

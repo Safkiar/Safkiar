@@ -13,6 +13,7 @@ hamburger.addEventListener("click", () => {
     bar3.classList.add("animateBar3");
     mobileNav.classList.add("openDrawer");
     document.body.style.overflow = "hidden";
+
     switched = true;
   } else {
     bar1.classList.remove("animateBar1");
@@ -20,12 +21,14 @@ hamburger.addEventListener("click", () => {
     bar3.classList.remove("animateBar3");
     mobileNav.classList.remove("openDrawer");
     document.body.style.overflow = "visible";
+
     switched = false;
   }
 });
 
 function updateSwitchedBasedOnWidth() {
   window.innerWidth > 650 ? mobileNav.classList.remove("openDrawer") : null;
+  containerElement.classList.remove("blurAnimation");
   switched = false;
   bar1.classList.remove("animateBar1");
   bar2.classList.remove("animateBar2");

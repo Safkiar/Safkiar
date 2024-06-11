@@ -4,13 +4,10 @@ i18next.init(
     resources: {
       en: {
         translation: {
-          welcome_message: "Hello!",
-          firstHeading:
-            "I am self-taught front-end web developer, my enthusiasm for technology and programming is a personal passion that I actively pursue each day, without exception. I am eager to transition this commitment into a professional setting where I can contribute to the success of an organization while simultaneously refining my skills.",
-          secondHeading:
-            "I have devoted numerous hours to comprehensive courses to increase my knowledge base, successfully completed a substantial number of coding exercises , and brought several projects to completion. I invite you to review these accomplishments of my portfolio.",
-          thirdHeading:
-            "With a hunger for learning programming, I am in search of a role that presents new challenges and opportunities for growth. If you are looking for a dyscyplined and creative developer with an insatiable drive , I would be delighted to discuss how my skills and ambitions align with the goals of your company.",
+          welcome_message: "Hi, I'm Michał Kikowski!",
+          firstHeading: "I specialize in Front Web Development",
+          secondHeading: "Check out my projects",
+          thirdHeading: "And get in touch with me!",
           navHome: "Home",
           navProjects: "Projects",
           navCertificates: "Certificates",
@@ -47,13 +44,10 @@ i18next.init(
       },
       pl: {
         translation: {
-          welcome_message: "Cześć!",
-          firstHeading:
-            "Samodzielnie poświęcam się nauce front-end web developmentu. Moja entuzjastyczna pasja do technologii i programowania jest osobistą pasją, którą aktywnie realizuję każdego dnia, bez wyjątku. Chętnie przekształcę to zaangażowanie w profesjonalne środowisko, gdzie będę mógł przyczynić się do sukcesu organizacji, jednocześnie doskonaląc swoje umiejętności.",
-          secondHeading:
-            "Poświęciłem niezliczone godziny na kompleksowe kursy, aby zwiększyć swoją bazę wiedzy, z powodzeniem ukończyłem znaczną liczbę ćwiczeń programistycznych i zrealizowałem kilka projektów. Zapraszam do zapoznania się z tymi osiągnięciami w moim portfolio.",
-          thirdHeading:
-            "Głodny nauki programowania, szukam roli, która stawia nowe wyzwania i możliwości rozwoju. Jeśli szukasz zdyscyplinowanego i kreatywnego dewelopera z nienasyconym zapałem, z przyjemnością omówię, jak moje umiejętności i ambicje łączą się z celami Twojej firmy.",
+          welcome_message: "Cześć, jestem Michał Kikowski!",
+          firstHeading: "Zajmuje się Front Web Development",
+          secondHeading: "Zapoznaj się z moimi projektami",
+          thirdHeading: "I skontaktuj się ze mną!",
           navHome: "Główna",
           navProjects: "Projekty",
           navCertificates: "Certyfikaty",
@@ -70,7 +64,7 @@ i18next.init(
           still: "Wciąż zatrudniony",
           sector: "Sektor Biznes Banking z obsługą wyjątkową i wsparciem IT",
           joined2: "Październik 2016",
-          still2: "Lipiec 2016",
+          still2: "Lipiec 2021",
           psycholog:
             "Magister, Psychologia doradztwa zawodowego i organizacji, Uniwersytet Łódzki",
           opis: "Podczas tego czasu, pracowałem  jako trener personalny przez 2 lata, ukończyłem 2 letnią szkołę medyczną z tytułem technika zawodowego masażysty, robiłem praktyki jako rekruter i psycholog w szpitalu psychiatrycznym oraz pracowałem jako kelner",
