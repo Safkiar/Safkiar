@@ -667,7 +667,7 @@ a {
   }
 }
 
-.first__container__content .visibleHeader {
+.visibleHeader {
   opacity: 1;
 }
 
@@ -688,10 +688,10 @@ a {
 .engCV {
   width: 20px;
   /* margin-top: 10px; */
-  margin-right: 3px;
+  margin-left: 6px;
 }
 
 .polCV {
   width: 17px;
-  margin-right: 3px;
+  margin-left: 10px;
 }
