@@ -1,17 +1,15 @@
 /* ---------------------------------------------------------------------------- */
 /* IMAGES CERTIFICATES */
 
-:root {
-  /* --bor: 1px solid black; */
-}
-
 .section {
   position: relative;
   border: var(--bor);
 }
-
+.testimonial {
+  height: 70vh;
+}
 .testimonial img {
-  width: 60%;
+  width: 50%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -231,6 +229,16 @@ button:active {
   }
 }
 
+@media (min-width: 2800px) {
+  .testimonial img {
+    width: 30%;
+  }
+}
+@media (min-width: 4000px) {
+  .testimonial img {
+    width: 20%;
+  }
+}
 @media (max-width: 1200px) {
   .testimonial img {
     width: 100%;
@@ -261,7 +269,7 @@ button:active {
     font-size: 0.9rem;
   }
 }
-= @media (max-width: 400px) {
+@media (max-width: 400px) {
   .buttons {
     width: 300px;
     margin-top: 30px;

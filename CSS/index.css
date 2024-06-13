@@ -181,6 +181,11 @@ html {
   height: auto;
   overflow-x: hidden;
 }
+@media (min-width: 1200px) {
+  .container {
+    overflow-y: hidden;
+  }
+}
 
 .flex__class {
   display: flex;
@@ -221,123 +226,7 @@ html {
 .colorContainer {
   width: 50%;
   margin-top: 20px;
-}
-
-.first__container__contact {
-  width: 30%;
-  border: var(--border);
-
-  display: flex;
-  flex-direction: column;
-}
-
-.portret {
-  width: 60%;
-  margin: 20px auto;
-
-  /*  */
-}
-
-.curtain {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  border: var(--border);
-  transition: all 0.5s;
-}
-.curtain li {
-  position: relative;
-  list-style: none;
-  cursor: pointer;
-  margin: 2% 5%;
-  border: var(--border);
-}
-.curtain li a {
-  text-decoration: none;
-}
-.curtain li a .fa-brands {
-  font-size: 5em;
-  color: #000000;
-  border: var(--border);
-}
-.curtain li a::before {
-  font-family: "FontAwesome";
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 5em;
-  height: 0;
-  overflow: hidden;
-  transition: 0.5s ease-in-out;
-  border: var(--border);
-}
-
-.curtain li:nth-child(1) a::before {
-  content: "\f09b";
-  color: #ffffff;
-  /* border-bottom: 4px solid #ffffff; */
-}
-.curtain li:nth-child(2) a::before {
-  content: "\f08c";
-  color: #1da1f2;
-  /* border-bottom: 4px solid #0077b5; */
-}
-.curtain li:hover a::before {
-  height: 100%;
-}
-.mailTwo {
-  max-width: 100%; /* Ensure it doesn't exceed the container's width */
-  margin-left: 4px;
-}
-
-.mail__link {
-  color: black;
-  text-decoration: none;
-  font-size: 1.2rem;
-  display: block;
-  text-align: left;
-  margin-top: 10%;
-  margin-left: 10%;
-  margin-right: 3%;
-  border: var(--border);
-  /* background-color: red; */
-  display: flex;
-}
-
-.mail__link:hover {
-  color: white;
-}
-
-.codewars__paragraph:hover {
-  color: rgb(255, 0, 0);
-}
-
-.fa-sharp {
-  border: var(--border);
-  margin-right: 2px;
-}
-
-a {
-  text-decoration: none;
-}
-
-.codewars__paragraph {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-  display: flex;
-  text-align: left;
-  margin-top: 10%;
-  margin-left: 10%;
-  margin-right: 3%;
-  cursor: pointer;
-  border: var(--border);
-}
-
-.codewars__icon {
-  width: 1.4rem;
-  border: var(--border);
-  margin-right: 5px;
+  height: auto;
 }
 
 .hrIndex {
@@ -464,6 +353,156 @@ a {
   animation-delay: 1.5s;
 }
 
+.first__container__contact {
+  width: 30%;
+  margin-right: 0;
+  border: var(--border);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.portret {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.curtain {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: var(--border);
+  transition: all 0.5s;
+}
+.curtain li {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  margin: 2% 5%;
+  border: var(--border);
+}
+.curtain li a {
+  text-decoration: none;
+}
+.curtain li a .fa-brands {
+  font-size: 5em;
+  color: #000000;
+}
+.curtain li a::before {
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 5em;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.curtain li:nth-child(1) a::before {
+  content: "\f09b";
+  color: #ffffff;
+}
+.curtain li:nth-child(2) a::before {
+  content: "\f08c";
+  color: #1da1f2;
+}
+.curtain li:hover a::before {
+  height: 100%;
+}
+
+.mail__container {
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.mail__link {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.mailTwo {
+  margin-left: 4px;
+}
+
+.mail__link:hover {
+  color: white;
+}
+
+.codewars__paragraph:hover {
+  color: rgb(255, 0, 0);
+}
+
+.fa-sharp {
+  border: var(--border);
+  margin-right: 2px;
+  margin-top: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.codewars__paragraph {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.codewars__icon {
+  width: 1.4rem;
+  border: var(--border);
+  margin-right: 5px;
+}
+
+.primary__download__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.download__container__one {
+  margin-right: 20px;
+}
+
+.download__container__two {
+  margin-left: 20px;
+}
+
+.download {
+  background-color: rgb(195, 190, 168);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 8px 14px;
+  width: 150px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.download a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+
+.download:hover {
+  background-color: rgb(169, 165, 146);
+}
+
 @media (max-width: 1760px) {
   .mail__link {
     font-size: 1.2rem;
@@ -519,10 +558,6 @@ a {
 
   .first__container__content h1 {
     font-size: 1.3rem;
-  }
-
-  .first__container__content h2 {
-    /* font-size: 1rem; */
   }
 }
 
@@ -622,7 +657,7 @@ a {
 
 @keyframes slideToLeft {
   0% {
-    transform: translateX(100vw); /* Move offscreen to the right */
+    transform: translateX(100%); /* Move offscreen to the right */
     opacity: 0;
   }
   100% {

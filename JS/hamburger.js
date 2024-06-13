@@ -28,7 +28,6 @@ hamburger.addEventListener("click", () => {
 
 function updateSwitchedBasedOnWidth() {
   window.innerWidth > 650 ? mobileNav.classList.remove("openDrawer") : null;
-  containerElement.classList.remove("blurAnimation");
   switched = false;
   bar1.classList.remove("animateBar1");
   bar2.classList.remove("animateBar2");
