@@ -201,7 +201,8 @@ html {
 .first__container__content {
   width: 40%;
 
-  padding: 2% 5%;
+  padding: 3% 5%;
+  padding-left: 7%;
 }
 
 .container__h1 {
@@ -666,7 +667,7 @@ a {
   }
 }
 
-.visibleHeader {
+.first__container__content .visibleHeader {
   opacity: 1;
 }
 
@@ -682,4 +683,15 @@ a {
     font-size: 1rem;
     margin: 2px 1px;
   }
+}
+
+.engCV {
+  width: 20px;
+  /* margin-top: 10px; */
+  margin-right: 3px;
+}
+
+.polCV {
+  width: 17px;
+  margin-right: 3px;
 }
