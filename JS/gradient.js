@@ -75,10 +75,10 @@ function addStars(delay) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  addClassAfterDelay("firstH", "visibleHeader", 900);
-  addClassAfterDelay("secondH", "visibleHeader", 1900);
-  addClassAfterDelay("thirdH", "visibleHeader", 2900);
-  addClassAfterDelay("fourthH", "visibleHeader", 3900);
-  addClassAfterDelay("expContainer--technology", "visibleHeader", 4900);
-  addStars(4900);
+  addClassAfterDelay("firstH", "visibleHeader", 500);
+  addClassAfterDelay("secondH", "visibleHeader", 1500);
+  addClassAfterDelay("thirdH", "visibleHeader", 2500);
+  addClassAfterDelay("fourthH", "visibleHeader", 3500);
+  addClassAfterDelay("expContainer--technology", "visibleHeader", 4600);
+  addStars(4800);
 });
