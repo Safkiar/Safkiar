@@ -629,6 +629,11 @@ a {
 
   .first__container__content {
     width: 94%;
+    padding-left: 2px;
+    padding-top: 19px;
+  }
+  .container__home .first__container__content h2 {
+    font-size: 0.9rem;
   }
 }
 
