@@ -90,6 +90,22 @@
   color: white;
 }
 
+@media (max-width: 750px) {
+  .cats--container {
+    flex-direction: column;
+  }
+  .kiara--div {
+    width: 100%;
+    height: 100%;
+    background-position: center -50px;
+  }
+
+  .safir--div {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media (max-width: 650px) {
   .container {
     height: 99.9vh;
