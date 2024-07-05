@@ -51,11 +51,13 @@
 .link--nav {
   color: black;
   position: relative;
+  text-decoration: none;
 }
 
 .link--home {
   position: relative;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .btn {
@@ -420,7 +422,6 @@
 
 .animateBar1 {
   animation: flipBar1 0.5s forwards;
-  animation-fill-mode: ;
 }
 .animateBar2 {
   animation: fadeBar2 0.5s forwards;

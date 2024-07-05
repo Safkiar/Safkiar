@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./CSS/navbar.css" />
     <link rel="stylesheet" href="./CSS/projects.css" />
     <title>Safkiar</title>
-    <script defer src="JS/gradient.js"></script>
     <script defer src="JS/view.js"></script>
     <script defer src="JS/hamburger.js"></script>
     <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
@@ -25,6 +24,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
     />
   </head>
   <body>
@@ -233,4 +237,17 @@
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script>
+    toastr.options = {
+      positionClass: "toast-top-center", // Center position
+      preventDuplicates: true, // Prevent duplicate toasts
+      onclick: null, // Handle click event
+      showDuration: "300", // Duration of fade in and out
+      hideDuration: "1000", // Duration to hide
+      timeOut: "4000", // Time to show
+      extendedTimeOut: "1000", // Time to show extended
+    };
+    toastr.info("DailyQuest React Project in progress...");
+  </script>
 </html>
