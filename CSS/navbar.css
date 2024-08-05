@@ -127,7 +127,7 @@
 .navbar__element::before {
   content: "";
   background-color: rgb(10, 10, 10);
-  width: 100%;
+  width: 101%;
   height: 5%;
   position: absolute;
   z-index: -5;
