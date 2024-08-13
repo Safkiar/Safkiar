@@ -26,6 +26,8 @@ i18next.init(
             "Business Banking Sector with Exception Handling and IT support",
           joined2: "October 2016",
           still2: "July 2021",
+          still3: "Still employed",
+          data3: "August 2024",
           psycholog:
             "Master`s degree, Career Counseling and Organizational Psychology, University of Łódź",
           opis: "During this time I worked as a personal trainer for 2 years, completed a 2-year medical school as a massage therapist, did internships as a recruiter and psychologist in a psychiatric hospital, and worked as a waiter",
@@ -35,6 +37,7 @@ i18next.init(
           taski: "Finished tasks",
           skl: "Skills",
           dyplom: "Other diplomas",
+          p7: "The Well-Schedule website is a user-friendly platform for managing events, allowing for detailed customization, such as setting occurrences for specific weeks of the month. Adding events is straightforward—just a simple click is required. The platform provides a clear view of your schedule with daily, weekly, and monthly calendar options. Additionally, it integrates seamlessly with Firebase and utilizes the React Scheduler library for robust performance and functionality.",
           p6: "Daily Quest is a React-based application designed to help users manage their tasks and goals efficiently. Users can add and track quests that are daily, one-time, or recurring on specific days. The app also includes features for adding and editing notes, providing detailed information about each quest. Additionally, it offers a calendar view for an organized overview of upcoming tasks and progress tracking. This comprehensive tool ensures users stay on top of their quests and improve productivity.",
           p5: "The booking management app built with React, React Query, and Supabase offers comprehensive features including booking and cabin management with editable details. It provides real-time statistics and interactive charts, supports dark mode, and is fully responsive. User authentication and settings are securely handled through Supabase, demonstrating proficiency in modern frontend technologies and effective backend integration.",
           p4: "Mix React project is a dynamic web application that offers a variety of interface solutions. It encompasses a wide range of features such as informational cards, interactive quizzes, a finance management module resembling online banking, a currency converter facilitating quick calculations, as well as tools for handling dates. It's a comprehensive environment that combines diverse interface components, providing users with a rich experience in utilizing various functions all in one place.",
@@ -66,6 +69,8 @@ i18next.init(
           sector: "Sektor Biznes Banking z obsługą wyjątkową i wsparciem IT",
           joined2: "Październik 2016",
           still2: "Lipiec 2021",
+          still3: "Wciąż zatrudniony",
+          data3: "Sierpień 2024",
           psycholog:
             "Magister, Psychologia doradztwa zawodowego i organizacji, Uniwersytet Łódzki",
           opis: "Podczas tego czasu, pracowałem  jako trener personalny przez 2 lata, ukończyłem 2 letnią szkołę medyczną z tytułem technika zawodowego masażysty, robiłem praktyki jako rekruter i psycholog w szpitalu psychiatrycznym oraz pracowałem jako kelner",
@@ -75,6 +80,7 @@ i18next.init(
           taski: "Skończone zadania",
           skl: "Umiejętności",
           dyplom: "Inne dyplomy",
+          p7: "Strona Well-Schedule to przyjazna użytkownikowi platforma do zarządzania wydarzeniami, umożliwiająca szczegółową personalizację, taką jak ustawianie powtarzalności na konkretne tygodnie miesiąca. Dodawanie wydarzeń jest bardzo proste — wystarczy jedno kliknięcie. Platforma oferuje przejrzysty widok harmonogramu z opcjami kalendarza dziennego, tygodniowego i miesięcznego. Dodatkowo, integruje się bezproblemowo z Firebase i korzysta z biblioteki React Scheduler, co zapewnia wydajność i funkcjonalność.",
           p6: "Daily Quest to aplikacja oparta na React, zaprojektowana w celu efektywnego zarządzania zadaniami i celami użytkowników. Użytkownicy mogą dodawać i śledzić zadania, które są codzienne, jednorazowe lub powtarzające się w określone dni. Aplikacja zawiera również funkcje dodawania i edytowania notatek, umożliwiające szczegółowy opis każdego zadania. Dodatkowo, oferuje widok kalendarza, aby zapewnić zorganizowany przegląd nadchodzących zadań i śledzenie postępów. To wszechstronne narzędzie pomaga użytkownikom być na bieżąco ze swoimi zadaniami i zwiększać produktywność.",
           p5: "Aplikacja do zarządzania rezerwacjami zbudowana przy użyciu React, React Query i Supabase oferuje kompleksowe funkcje, w tym zarządzanie rezerwacjami i kabinami z możliwością edytowania szczegółów. Zapewnia statystyki w czasie rzeczywistym i interaktywne wykresy, obsługuje tryb ciemny i jest w pełni responsywna. Uwierzytelnianie użytkowników i ustawienia są bezpiecznie obsługiwane przez Supabase, co demonstruje biegłość w nowoczesnych technologiach frontendowych oraz skuteczną integrację z backendem.",
           p4: "Projekt Mix React to dynamiczna aplikacja internetowa, która oferuje różnorodne rozwiązania interfejsowe. Obejmuje szeroki zakres funkcji, takich jak karty informacyjne, interaktywne quizy, moduł zarządzania finansami przypominający bankowość online, konwerter walut umożliwiający szybkie obliczenia oraz narzędzia do obsługi dat. Jest to kompleksowe środowisko łączące różnorodne komponenty interfejsu, zapewniające użytkownikom bogate doświadczenie w korzystaniu z różnych funkcji w jednym miejscu.",
