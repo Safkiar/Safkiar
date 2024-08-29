@@ -76,7 +76,7 @@
 
 @keyframes transfer {
   0% {
-    transform: translateY(130px);
+    transform: translateY(150px);
   }
   100% {
     transform: translateY(0px);
@@ -329,6 +329,56 @@ a {
 
 .download:hover {
   background-color: rgb(169, 165, 146);
+}
+
+.updated {
+  margin-top: 20px;
+}
+
+.updatedVar {
+  width: 100%;
+}
+
+.section .fa-regular {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+  align-self: flex-end;
+}
+
+.updatedVar {
+  position: relative;
+}
+
+.section p.unhide {
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0;
+  position: relative;
+}
+
+.section p.unhide:hover {
+  background-color: rgba(197, 194, 194, 0.3);
+}
+
+.section .content {
+  margin-top: 10px;
+  padding-bottom: 5px;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  box-shadow: 0px 5px 5px rgba(197, 194, 194, 0.1);
+  /* display: none; Initially hidden */
+}
+
+.toggle-icon {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.open .toggle-icon i {
+  transform: rotate(45deg); /* Rotate the plus icon to create an 'X' */
 }
 
 @media (max-width: 1760px) {

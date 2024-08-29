@@ -50,3 +50,16 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   addStars(4750);
 });
+
+function toggleContent(element) {
+  const content = element.nextElementSibling;
+  const icon = element.querySelector(".toggle-icon i");
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    element.classList.add("open");
+  } else {
+    content.style.display = "none";
+    element.classList.remove("open");
+  }
+}

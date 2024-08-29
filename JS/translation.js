@@ -5,7 +5,7 @@ i18next.init(
       en: {
         translation: {
           welcome_message: "Hi, I'm Michał Kikowski!",
-          firstHeading: "I specialize in Front Web Development",
+          firstHeading: "I specialize in Full Stack Development",
           secondHeading: "Check out my projects",
           thirdHeading: "And get in touch with me!",
           navHome: "Home",
@@ -44,12 +44,14 @@ i18next.init(
           p3: "Pizza ordering app, developed with Tailwind CSS, offers a seamless user experience for ordering pizza online. Users can easily browse through a variety of pizzas, add them to their cart and securely checkout using their preferred payment method.",
           p2: "Mini Chess is an innovative 6x8 adaptation of traditional chess, incorporating full game rules including castling, en passant, and pawn promotion. This streamlined version amplifies strategic intricacies by condensing the battlefield, compelling players to engage in complex tactics and maneuvers within a compact space. It stands as a testament to skillful game design and programming, ideal for those seeking to refine their chess strategy in a novel format.",
           p1: "Forkify is your culinary companion, bringing a world of flavors right to your fingertips. This elegant recipe finder allows food enthusiasts to explore over a million recipes with ease. Utilizing a comprehensive API, Forkify not only helps users search for recipes but also provides features to save and organize favorite dishes into a personal collection. Its intuitive interface and robust functionality cater to the modern cook’s needs, making it simple to discover new meals and master culinary skills. Built with an MVC structure, Forkify exemplifies streamlined design and efficient data management for an optimal user experience",
+          openContent: "Libraries",
+          openContent2: "Databases and tools",
         },
       },
       pl: {
         translation: {
           welcome_message: "Cześć, jestem Michał Kikowski!",
-          firstHeading: "Zajmuje się Front Web Development",
+          firstHeading: "Zajmuje się Full Stack Development",
           secondHeading: "Zapoznaj się z moimi projektami",
           thirdHeading: "I skontaktuj się ze mną!",
           navHome: "Główna",
@@ -87,6 +89,8 @@ i18next.init(
           p3: "Aplikacja do zamawiania pizzy, rozwinięta przy użyciu Tailwind CSS, oferuje płynne doświadczenie użytkownika podczas zamawiania pizzy online. Użytkownicy mogą łatwo przeglądać różne rodzaje pizz, dodawać je do koszyka i bezpiecznie finalizować zamówienie za pomocą preferowanej metody płatności.",
           p2: "Mini Chess to innowacyjna adaptacja tradycyjnych szachów na planszy 6x8, zawierająca pełne zasady gry, w tym roszady, en passant i promocję pionka. Ta uproszczona wersja wzmacnia strategiczne zawiłości, kondensując pole walki, zmuszając graczy do angażowania się w skomplikowane taktyki i manewry w ograniczonej przestrzeni. Jest to świadectwo umiejętnego projektowania gier i programowania, idealne dla tych, którzy chcą doskonalić swoją strategię szachową w nowym formacie.",
           p1: "Forkify to Twój kulinarny towarzysz, który przynosi świat smaków na wyciągnięcie ręki. Ten elegancki wyszukiwacz przepisów pozwala entuzjastom jedzenia z łatwością eksplorować ponad milion przepisów. Wykorzystując kompleksowe API, Forkify nie tylko pomaga użytkownikom wyszukiwać przepisy, ale także oferuje funkcje zapisywania i organizowania ulubionych dań w osobistą kolekcję. Jego intuicyjny interfejs i solidna funkcjonalność spełniają potrzeby nowoczesnych kucharzy, ułatwiając odkrywanie nowych potraw i doskonalenie umiejętności kulinarnych. Zbudowany w strukturze MVC, Forkify jest przykładem zoptymalizowanego projektu i efektywnego zarządzania danymi dla optymalnego doświadczenia użytkownika.",
+          openContent: "Biblioteki",
+          openContent2: "Bazy danych i narzędzia",
         },
       },
     },
